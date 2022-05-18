@@ -1,0 +1,138 @@
+.about-section{
+    background-color: white;
+    overflow-x: hidden; 
+    font-family: 'Roboto', sans-serif;
+
+
+}
+.about-wrapper{
+    width: 80%;
+}
+.form-section{
+    background-color: rgba(252, 243, 226, 0.603);
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 0; */
+    height: 480px;
+}
+.about-tenda h6{
+    color: orange;
+    margin-top: 25px;
+    text-align: left;
+}
+.our-story h4{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.story{
+    text-align: left;
+    font-size: 14px;
+}
+.tenda{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 8em 0em 2em -3em;
+    
+}
+.tenda-box{
+    padding: 0.5rem;
+    width: max-content;
+    min-width: max-content;
+    display: flex;
+    border: solid 0.02rem #000;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgba(252, 243, 226, 0.603);
+    border-radius: 5px;
+
+}
+.tenda-box h6{
+    margin: 5px;
+    font-size: 1.2rem;
+    padding: auto;
+}
+.right-header{
+    margin: 1em 0em 0em 0em;
+    padding: 2px;
+}
+.right-header h5{
+    font-weight: bold;
+}
+
+.button3{
+    background-color: orange !important;
+    color: #ffffff;
+    border: none;
+    /* padding: 2px; */
+}
+.button-in-about{
+    background-color: none !important;
+    border: none;
+    cursor: pointer;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+}
+.our{
+    font-size: 0.8rem;
+    margin-left: 0 !important;
+    border: none;
+    /* display: inline; */
+    color: black;
+    outline: none;
+    background: none!important;
+    padding: 0!important;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-pills .nav-link.active{
+    color: #069;
+}
+.short .form-section{
+    display: flex;
+    /* important */
+    margin-bottom: 0;
+    align-items: flex-start;
+    background-color: rgba(252, 243, 226, 0.603);
+    justify-content: stretch;
+    min-height: 100%;
+    
+}
+.sameh{
+    display: flex;
+    align-items: stretch;
+    background-color: aqua;
+}
+.samehh-1{
+    min-height: 100%;
+}
+.samehh-2{
+    min-height: 100%;
+}
+.pane-image{
+    margin-top: 2em;
+}
+.not-this{
+    background-color: rgba(252, 243, 226, 0.603);
+    padding: 8px;
+    height: 480px;
+}
+.keys{
+    font-size: 12px;
+    margin-top: -10px;
+}
+.now-this{
+    font-size: 14px;
+}
+.nav-pills .nav-link.active{
+    color: orange !important;
+}
+.nav-pills .nav-link:hover{
+    color: #cc5500;
+}

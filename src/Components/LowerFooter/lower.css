@@ -1,0 +1,43 @@
+.lower-footer-section{
+    background-color: orange;
+    font-family: 'PT Sans', sans-serif;
+}
+.lower-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.big-header{
+    padding: 20px;
+    
+}
+.big-header > .header{
+    color: #ffffff; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.8vw;
+}
+.social > .icons{
+    margin: 10px 5px 10px 5px;
+    padding: auto;
+    
+}
+.policies a{
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 1.3vw;
+    
+}
+.policies a:hover{
+    color: maroon;
+    text-decoration: underline;
+}
+.copyright{
+    color: maroon;
+    padding: 5px;
+    font-size: 1.3vw;
+}

@@ -1,0 +1,26 @@
+.myMenu{
+    width: 80%;
+}
+.navLink{
+    padding: 15px !important;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navButton{
+    color: #ffffff;
+    background-color: orange !important;
+    border: none;
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 16px !important;
+    display: inline;
+    
+}
+.navButton:hover{
+    color: maroon;
+    border: solid #ffffff 2px;
+}
+.navbutton-link{
+    text-decoration: none;
+}

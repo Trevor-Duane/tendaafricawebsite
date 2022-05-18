@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Varela&family=Varela+Round&display=swap');
+.testimonial-head h4{
+	text-align: left;
+	padding-top: 1em;
+}
+.testimonial-wrapper{
+  width: 80%;
+
+}
+.feedback-slider-item img {
+	max-width: 100%;
+	height: 140px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+
+/* CAROUSEL STARTS */
+.testimonial-wrapper > .item{
+  width: 50%;
+}
+.testing-class{
+	display: flex;
+    justify-content: center;
+}
+.feedback-slider{
+  position: relative;
+  width: 50%;
+}
+.feedback-slider-item {
+	position: relative;
+	/* padding: 60px; */
+	padding: 30px;
+	margin: 0 auto;
+}
+.the-customer{
+	margin-top: -1em;
+	font-family: 'Shadows Into Light', cursive;
+}
+.customer-name {
+	margin-top: 15px;
+	color: #fff;
+	margin-bottom: 25px;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+}
+.customer-says{
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+
+
+}
+
+.feedback-slider-item p {
+	line-height: 1.875;
+	color: #fff;
+}
+
+.customer-rating {
+	background-color: #eee;
+	border: 3px solid #fff;
+	color: rgba(1, 1, 1, 0.702);
+	font-weight: 700;
+	border-radius: 50%;
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	line-height: 44px;
+	font-size: 15px;
+	right: 0;
+	top: 77px;
+	text-indent: -3px;
+}
+/* .img-circle{
+	height: 80px;
+	width: 80px;
+} */
+
+/* GREY BACKGROUND COLOR OF THE ACTIVE SLIDER */
+.feedback-slider-item:after {
+	content: "";
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 0;
+	top: 103px;
+	/* background-color: #f6f6f6; */
+	background-color: orange;
+	border: 1px solid rgba(251, 90, 13, 0.1);
+	border-radius: 10px;
+	z-index: -1;
+}
+.rate-star{
+	color: orange;
+	margin-bottom: 12px;
+	padding: 1px;
+}
+.carousel-main{
+	margin-bottom: 5em;
+	margin-top: 2em;
+}

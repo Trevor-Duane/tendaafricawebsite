@@ -1,0 +1,64 @@
+.partners-wrapper{
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+.partners-left{
+    width: 50%;
+}
+.partners-right{
+    width: 50%;
+    height: 400px;
+}
+.trust-us h6{
+    color: orange;
+    margin-top: 25px;
+    text-align: left;
+}
+.our-partners h4{
+    text-align: left;
+    font-weight: bolder;
+}
+.why-trust{
+    text-align: left;
+    font-size: 14px
+}
+.the-partners{
+    margin: 10em 0em 5em 0em;
+    /* background-color: red; */
+}
+.slider-imagez{
+    height: 50px;
+    width: 120px;
+}
+
+.the-partners .carousel-control-next-icon{
+    background-color: orange !important;
+    color: orange !important;
+    border-radius: 5px;
+}
+.the-partners .carousel-control-prev-icon{
+    background-color: orange;
+    color: orange !important;
+    border-radius: 5px;
+}
+.partner-image-wrapper{
+    height: 100%;
+    width: 100%;
+}
+.partner-image{
+    height: 100%;
+    width: 100%;
+    margin-top: 2em;
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 2em;
+}
+.partner-image-wrapper2{
+    width: 400px;
+    height: 350px;
+    position: relative;
+}
+.partner-image2{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

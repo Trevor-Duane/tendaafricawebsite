@@ -1,0 +1,49 @@
+.product-section{
+    /* height: auto; */
+    background-color: rgba(252, 243, 226, 0.603);
+    font-family: 'Roboto', sans-serif;
+}
+.our-products{
+    height: auto;
+    width: 80%;
+    /* background-color: rgba(241, 239, 225, 0.99); */
+}
+.we-done h6{
+    padding-top: 2em;
+    color: orange;
+    text-align: center;
+}
+.our-product h4{
+    font-weight: bolder;
+    text-align: center;
+}
+.product-para{
+    font-size: 14px;
+    text-align: center;
+    /* margin-left: 12%; */
+}
+.portfolio-buttons{
+    border: none;
+        outline: 0;
+        display: inline-block;
+        margin: 10px 10px 10px 0px;
+        /* padding: 10px 25px; */
+        color: #ffffff;
+        background-color: orange;
+        text-align: center;
+        cursor: pointer;
+}
+.portfolio-buttons:active{
+    border: none !important;
+    background-color: orange !important;
+    color: black !important;
+}
+.portfolio-buttons:hover{
+    border: none !important;
+    background-color: orange !important;
+    color: black !important;
+}
+.product-description{
+    font-size: 13px;
+}
+

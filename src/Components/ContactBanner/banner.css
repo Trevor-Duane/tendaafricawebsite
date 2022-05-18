@@ -1,0 +1,10 @@
+/* .crumb-banner{
+    background-image: url("/public/images/banner.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        height: 50vh;
+} */
+.crum-banner{
+    background-color: blue;
+    height: 40vh;
+}

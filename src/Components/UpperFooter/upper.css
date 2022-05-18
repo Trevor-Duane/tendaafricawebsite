@@ -1,0 +1,73 @@
+/* @media screen and (max-width: 600px) {
+    .services {
+      line-height: 14px;
+}
+} */
+.myFooter{
+    width: 80%;
+    font-family: 'PT Sans', sans-serif;
+}
+.upper-footer-section{
+    background-color: maroon;
+}
+.foooter-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   
+        
+}
+.tenda-logo{
+    width: 150px;
+    height: 140px;
+    /* margin-top: 0; */
+    margin-top: 3em;
+    padding: 0;
+}
+.logo-description{
+    margin-top: 3em;
+}
+.just-tenda{
+    width: fit-content;
+    text-align: left;
+    color: #f0dede;
+}
+#just-tenda-head{
+    color: orange;
+    font-size: 14px;
+    font-weight: bold;
+}
+.head-footer{
+    font-size: 22px;
+    border-bottom: solid 1px #8a2b2b;
+    display: inline;
+    color: orange;
+    text-align: left;
+    /* padding: 5px; */
+    /* margin: 10px; */
+    font-family: 'Roboto', sans-serif;
+}
+.footer-elements{
+    margin-top: 1em;
+    font-size: 14px;
+}
+.footer-elements p{
+    color: #f0dede;
+}
+.services{
+    line-height: 10px;
+    margin-top: 3em;
+    text-align: left;
+    color: #f0dede;
+}
+.about-us{
+    line-height: 12px;
+    text-align: left;
+    color: #f0dede;
+    margin-top: 3em;
+}
+.resources{
+    line-height: 10px;
+    margin-top: 3em;
+    text-align: left;
+    color: #f0dede;
+}
