@@ -16,7 +16,7 @@ export default function Testimonial() {
                         <Row className="testing-class">
                             <Col className="feedback-slider col-sm-12 col-md-12 col-xs-12">
                                 <div className="feedback-slider-item">
-                                    <img src="./images/rogerm.jpg" className="center-block img-circle" alt="Customer Feedback" />
+                                    <img src="./rogerm.jpg" className="center-block img-circle" alt="Customer Feedback" />
                                     <h3 className="customer-name">Roger Makubuya</h3>
                                     <p className="the-customer">Software Developer</p>
                                     <p className="customer-says">Thank you Tenda Africa for your timely managment of Projects. You always hit the deadline and target.</p>
@@ -32,7 +32,7 @@ export default function Testimonial() {
                         <Row className="testing-class">
                             <Col className="feedback-slider col-sm-12 col-md-12 col-xs-12">
                                 <div className="feedback-slider-item col-sm-12 col-md-12 col-xs-12">
-                                    <img src="./images/janetk.jpeg" className="center-block img-circle" alt="Customer Feedback" />
+                                    <img src="./janetk.jpeg" className="center-block img-circle" alt="Customer Feedback" />
                                     <h3 className="customer-name">Kerr Janet</h3>
                                     <p className="the-customer">Medical Doctor</p>
                                     <p className="customer-says">
@@ -51,7 +51,7 @@ export default function Testimonial() {
                         <Row className="testing-class">
                             <Col className="feedback-slider col-sm-12 col-md-12 col-xs-12">
                                 <div className="feedback-slider-item col-sm-12 col-md-12 col-xs-12">
-                                    <img src="./images/atiiya.jpeg" className="center-block img-circle" alt="Customer Feedback" />
+                                    <img src="./atiiya.jpeg" className="center-block img-circle" alt="Customer Feedback" />
                                     <h3 className="customer-name">Atiiya Innocent</h3>
                                     <p className="the-customer">Co-Founder GreenShuttles</p>
                                     <p className="customer-says">Tenda Africa has been the best agency we've worked with so far..</p>

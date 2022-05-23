@@ -8,6 +8,8 @@ import Products from '../../Components/ProductsComponent/Products';
 import Footer from '../../Components/FooterComponent/Footer';
 import Events from '../../Components/EventsComponent/Events';
 import Testimonial from '../../Components/TestimonialComponent/Testimonial';
+import Contact from '../ContactPage/Contact';
+import { Route, Routes, Link } from 'react-router-dom';
 
 export default function Home() {
   return (

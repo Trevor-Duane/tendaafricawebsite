@@ -26,7 +26,35 @@ const data = [
         image:"https://alaskansforbetterelections.com/wp-content/uploads/2020/07/Alaskans-for_Better-Elections-Icon-Vote-w-Circle.png",
         title:"TMP",
         description:"Election/Poll Management System",
-        category:"card",
+        category:"Card",
+    },
+    {
+        id:5,
+        image:"https://tendaafrica.com/img/pbx.PNG",
+        title:"HoduPBX",
+        description:"IP PBX Software",
+        category:"Communication",
+    },
+    {
+        id:6,
+        image:"https://tendaafrica.com/img/cc.PNG",
+        title:"HoduCC",
+        description:"Contact Center Software",
+        category:"Communication",
+    },
+    {
+        id:7,
+        image:"https://tendaafrica.com/img/conf.PNG",
+        title:"HoduConf",
+        description:"Audio Conferencing Software",
+        category:"Communication",
+    },
+    {
+        id:8,
+        image:"https://tendaafrica.com/img/blast.PNG",
+        title:"HoduBlast",
+        description:"Voice & SMS Broadcasting Software",
+        category:"Communication",
     },
 ]
 

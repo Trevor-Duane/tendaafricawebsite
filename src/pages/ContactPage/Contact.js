@@ -5,13 +5,43 @@ import { Breadcrumb, Button } from 'react-bootstrap';
 import { MdLocationPin, MdEmail } from "react-icons/md";
 import { BsTelephoneFill,BsArrowRightShort } from "react-icons/bs";
 import Footer from '../../Components/FooterComponent/Footer';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 import './contact.css';
 // import Banner from '../../Components/ContactBanner/Banner';
 
+const SERVICE_ID = "service_d8gt2ao";
+const TEMPLATE_ID = "template_7prfutg";
+const USER_ID = "Xd5tpxIrR_xFrbAC4";
+
 
 export default function Contact() {
   let iconstyles ={ color:"#cc5500", fontSize:"1.2em"}
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent Successfully',
+          iconColor: 'orange',
+          confirmButtonColor: '#000000',
+          confirmButtonTextColor: '#ffffff'
+        })
+      }, (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: error.text,
+        })
+      });
+    e.target.reset()
+  };
+
   return (
     <div>
         <Navigation />
@@ -82,24 +112,24 @@ export default function Contact() {
       </Col>
 
       <Col md={8} sm={12} xs={12} className="reachus-right">
-        <Form className="form">
+        <Form className="form" onSubmit={handleOnSubmit}>
           <h1>Send Message</h1>
           <p>You need a partner. We're here to help</p>
           <Row>
             <Col md={6} sm={12} xs={12}>
             <label>Name</label>
-            <input name="name"/></Col>
+            <input name="from_name"/></Col>
             <Col md={6} sm={12} xs={12}>
             <label>Email Address</label>
-            <input name="email"/></Col>
+            <input name="from_email"/></Col>
           </Row>
           <Row className="mb-3">
             <Col sm={12} xs={12}>
             <label>Phone Number</label>
-            <input name="text"/></Col>
+            <input name="phone_number"/></Col>
             <Col sm={12} xs={12}s>
             <label>Subject</label>
-            <input name="text"/></Col>
+            <input name="from_subject"/></Col>
           </Row>
           <label>Message</label>
           <textarea name="message" className="form-control" rows={4}/>

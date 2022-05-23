@@ -1,5 +1,5 @@
 .crumb-banner{
-    background-image: url("/public/images/banner.jpg");
+    background-image: url("/public/banner.jpg");
     /* background-color: red; */
         background-attachment: fixed;
         background-size: cover;

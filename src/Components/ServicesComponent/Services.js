@@ -1,9 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { BsSignal } from 'react-icons/bs';
-import { IoBarChartSharp } from 'react-icons/io5';
-import { SiAndroidstudio } from 'react-icons/si';
-import { FaThinkPeaks, FaCode, FaTools } from 'react-icons/fa';
+import { BsSignal, BsClipboardData } from 'react-icons/bs';
+import { FaThinkPeaks, FaCode, FaTools, FaAndroid } from 'react-icons/fa';
 import './services.css';
 
 export default function Services() {
@@ -48,7 +46,7 @@ export default function Services() {
                     </Col>
 
                     <Col className="grid3" xs={12} md={3}>
-                    <div className='grid-icon'> 
+                        <div className='grid-icon'> 
                             <FaTools size={72} color="Orange"/>
                         </div>
 
@@ -63,7 +61,7 @@ export default function Services() {
                 <Row className="show-grid2">
                     <Col  className="grid4" xs={12} md={3}>
                     <div className='grid-icon'> 
-                            <SiAndroidstudio size={72} color="Orange"/>
+                            <FaAndroid size={72} color="Orange"/>
                         </div>
 
                         <div className='grid-service'>
@@ -73,7 +71,7 @@ export default function Services() {
 
                     <Col className="grid5" xs={12} md={3}>
                     <div className='grid-icon'> 
-                            <IoBarChartSharp size={72} color="Orange"/>
+                            <BsClipboardData size={72} color="Orange"/>
                         </div>
 
                         <div className='grid-service text-nowrap'>

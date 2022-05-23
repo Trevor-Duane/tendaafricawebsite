@@ -1,20 +1,19 @@
-// import Navigationbar from './Components/NavbarComponent/Navigationbar';
-
-/*the real application imports */
-import Contact from './pages/ContactPage/Contact';
+import React from 'react';
 import Home from './pages/HomePage/Home';
-import { Route, Routes } from 'react-router-dom';
+import Contact from './pages/ContactPage/Contact';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-        <Routes basename="/">
-          <Route path="/" element={ <Home/> } />
-          <Route path="/contact" element={ <Contact/> } />
+    <div>
+      <BrowserRouter basename="/">
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
-      </div>
-  );
+      </BrowserRouter>
+      
+    </div>
+  )
 }
-
-export default App;

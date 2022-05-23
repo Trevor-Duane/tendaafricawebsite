@@ -19,22 +19,22 @@ export default function Navigationbar() {
                             <Nav.Link className="navLink" href="/">Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navLink" href="#services">Services</Nav.Link>
+                            <Nav.Link className="navLink" href="/#services">Services</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navLink" href="#solutions">Solutions</Nav.Link>
+                            <Nav.Link className="navLink" href="/#solutions">Solutions</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navLink" href="#about-us">About Us</Nav.Link>
+                            <Nav.Link className="navLink" href="/#about-us">About Us</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navLink" href="#partners">Partners</Nav.Link>
+                            <Nav.Link className="navLink" href="/#partners">Partners</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="navLink" href="/contact">Contact Us</Nav.Link>
+                            <Nav.Link className="navLink"  href="/contact">Contact Us</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>  
-                            <a className="navbutton-link" href="#about-us"><Button className="navButton">Hire Us</Button></a>
+                            <Nav.Link className="navbutton-link" href="/#about-us"><Button className="navButton">Hire Us</Button></Nav.Link>
                         </Nav.Item>   
                     </Nav>
                 </Navbar.Collapse>

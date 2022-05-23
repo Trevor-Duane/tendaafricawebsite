@@ -1,11 +1,38 @@
 import React from 'react';
 import { FaEye } from 'react-icons/fa';
-import { GiBullseye, GiPodiumWinner } from 'react-icons/gi';
-import { MdContactSupport } from 'react-icons/md';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
+import { BsFillChatTextFill, BsBullseye, BsWind } from 'react-icons/bs';
 import { Row, Col, Form, Nav, Tab, Container, Image } from 'react-bootstrap';
 import './about.css';
 
+const SERVICE_ID = "service_d8gt2ao";
+const TEMPLATE_ID = "template_7prfutg";
+const USER_ID = "Xd5tpxIrR_xFrbAC4";
+
 export default function About() {
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent Successfully',
+          iconColor: 'orange',
+          confirmButtonColor: '#000000',
+          confirmButtonTextColor: '#ffffff'
+        })
+      }, (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: error.text,
+        })
+      });
+    e.target.reset()
+  };
   return (
     <div className="about-section" id="about-us">
       <Container className="about-wrapper">
@@ -36,7 +63,7 @@ export default function About() {
                       </div>
               <Nav variant="pills" className="flex-row tenda" >
                 <Nav.Item className="m-1 tenda-box" sm="12">
-                  <MdContactSupport size={32} color="Orange"/>
+                  <BsFillChatTextFill size={32} color="Orange"/>
                   <Nav.Link eventKey="first" className="our">Quick Contact</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="m-1 tenda-box" sm="12">
@@ -44,11 +71,11 @@ export default function About() {
                   <Nav.Link eventKey="second" className="our">Our Vision</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="m-1 tenda-box" sm="12">
-                  <GiBullseye size={32} color="Orange"/>
+                  <BsBullseye size={32} color="Orange"/>
                   <Nav.Link eventKey="third" className="our">Our Mission</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="m-1 tenda-box" sm="12">
-                  <GiPodiumWinner size={32} color="Orange"/>
+                  <BsWind size={32} color="Orange"/>
                   <Nav.Link eventKey="fourth" className="our">Key Success</Nav.Link>
                 </Nav.Item>
               </Nav>
@@ -62,26 +89,26 @@ export default function About() {
                                 <h5>Contact Us</h5>
                             </div>
 
-                            <Form className="form2">
+                            <Form className="form2" onSubmit={handleOnSubmit}>
                               <p>You need to talk to us. We're here to listen.</p>
                               <Row>
                                 <Col md={6} sm={12} xs={12}>
-                                <label>Name</label>
-                                <input name="name"/></Col>
+                                <label className="form-labez">Name</label>
+                                <input className="form-labelz form-control" name="from_name"/></Col>
                                 <Col md={6} sm={12} xs={12}>
-                                <label>Email Address</label>
-                                <input name="email"/></Col>
+                                <label className="form-labez">Email Address</label>
+                                <input className="form-labelz form-control" name="from_email"/></Col>
                               </Row>
                               <Row className="mb-3">
                                 <Col md={6} sm={12} xs={12}>
-                                <label>Phone Number</label>
-                                <input name="text"/></Col>
+                                <label className="form-labez">Phone Number</label>
+                                <input className="form-labelz form-control" name="phone_number"/></Col>
                                 <Col md={6} sm={12} xs={12}s>
-                                <label>Subject</label>
-                                <input name="text"/></Col>
+                                <label className="form-labez">Subject</label>
+                                <input className="form-labelz form-control" name="from_subject"/></Col>
                               </Row>
                               <label>Message</label>
-                              <textarea name="message" className="form-control" rows={3}/>
+                              <textarea name="message" className="form-control form-message" rows={3}/>
                       
                               <input className="submitButton" type="submit" />
                             </Form>

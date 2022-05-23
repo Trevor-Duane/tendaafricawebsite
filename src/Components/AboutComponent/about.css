@@ -136,3 +136,16 @@
 .nav-pills .nav-link:hover{
     color: #cc5500;
 }
+.form-labelz{
+    height: 30px !important;
+}
+.form-labez{
+    margin-top: 10px;
+}
+input{
+    font-size: 12px;
+
+}
+.form-message.active{
+    color: #000;
+}

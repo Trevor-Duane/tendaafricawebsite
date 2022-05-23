@@ -34,7 +34,9 @@
     text-align: center;
     /* margin-left: 12%; */
 }
-
+.grid-icon{
+    margin-top: 15px;
+}
 .show-grid{
     display: flex;
     justify-content: space-evenly;
