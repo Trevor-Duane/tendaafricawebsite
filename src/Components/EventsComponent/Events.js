@@ -30,7 +30,7 @@ export default function Events() {
                             <div className="row row-table row-flush">
                                 <div className="col-xs-5">
                                 <picture className="lateral-picture">
-                                    <img src="./cloud.png" alt=""/>
+                                    <img src="../../assets/images/cloud.png" alt=""/>
                                 </picture>
                                 </div>
                                 <div className="col-xs-7 align-middle p-lg">
@@ -52,7 +52,7 @@ export default function Events() {
                             <div className="row row-table row-flush">
                                 <div className="col-xs-5">
                                 <picture className="lateral-picture">
-                                    <img src="./websys.png" alt=""/>
+                                    <img src="../../assets/images/websys.png" alt=""/>
                                 </picture>
                                 </div>
                                 <div className="col-xs-7 align-middle p-lg">

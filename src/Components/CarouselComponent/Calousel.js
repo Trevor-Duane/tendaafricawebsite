@@ -10,13 +10,13 @@ export default function Calousel() {
     <div className="calousel-main">
         <Container className="calousel-main2 p-0">
             <Carousel indicators={false} controls={false} className="carousel-inner">
-            {/* <Carousel.Item className="item" interval={1500}>
+            <Carousel.Item className="item" interval={1500}>
                 <Row className="calousel-wrapper">
                     <Col className="calousel-left" md="auto">
                         <div className="text-buttons">
                             <div className="hero-text">
                                 <p className="hero-para">We Provide Outsourced</p>
-                                <h1 className="hero-head">IT Services</h1>
+                                <h1 className="hero-head">IT<br></br>Services</h1>
                                 <p className="hero-para">for Start-ups and Mid-sized Companies</p>
 
                                 <div className="d-grid gap-2 d-md-block">
@@ -52,7 +52,7 @@ export default function Calousel() {
                         </div>
                     </Col>
                 </Row>
-            </Carousel.Item> */}
+            </Carousel.Item>
 
             <Carousel.Item className="item" interval={1500}>
                 <Row className="calousel-wrapper">
