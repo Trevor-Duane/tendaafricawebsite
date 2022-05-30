@@ -9,8 +9,8 @@ export default function App() {
     <div>
       <BrowserRouter basename="/">
         <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
       
