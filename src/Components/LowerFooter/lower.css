@@ -1,5 +1,5 @@
 .lower-footer-section{
-    background-color: orange;
+    background-color: rgb(85, 5, 5);
     font-family: 'PT Sans', sans-serif;
 }
 .lower-footer{
@@ -17,7 +17,7 @@
     color: #ffffff; 
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
 .social > .icons{
     margin: 10px 5px 10px 5px;
@@ -29,15 +29,18 @@
     text-decoration: none;
     color: #ffffff;
     font-weight: lighter;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     
 }
 .policies a:hover{
-    color: maroon;
+    color: orange;
     text-decoration: underline;
 }
 .copyright{
     color: maroon;
     padding: 5px;
-    font-size: 1.3vw;
+    font-size: 1vw;
+}
+#company-name{
+    color: orange;
 }

@@ -28,7 +28,7 @@ export default function Lower() {
             </div>
 
             <div md={12} sm={12} xs={12} className="copyright">
-                <p>&copy; 2022 Tenda Africa. All Rights Reserved</p>
+                <p>&copy; 2022 <span id="company-name">Tenda Africa</span>. All Rights Reserved</p>
 
             </div>
         </Container>

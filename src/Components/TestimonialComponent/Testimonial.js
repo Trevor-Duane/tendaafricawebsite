@@ -1,6 +1,9 @@
 import React from 'react';
 import { AiFillStar } from "react-icons/ai";
 import { Container, Carousel, Row, Col } from 'react-bootstrap';
+import Atiiya from '../../assets/images/atiiya.jpeg';
+import Janet from '../../assets/images/janetk.jpeg';
+import Roger from '../../assets/images/rogerm.jpg';
 import './testimonial.css';
 
 export default function Testimonial() {
@@ -16,7 +19,7 @@ export default function Testimonial() {
                         <Row className="testing-class">
                             <Col className="feedback-slider col-sm-12 col-md-12 col-xs-12">
                                 <div className="feedback-slider-item">
-                                    <img src="../../assets/images/rogerm.jpg" className="center-block img-circle" alt="Customer Feedback" />
+                                    <img src={Roger} className="center-block img-circle" alt="Customer Feedback" />
                                     <h3 className="customer-name">Roger Makubuya</h3>
                                     <p className="the-customer">Software Developer</p>
                                     <p className="customer-says">Thank you Tenda Africa for your timely managment of Projects. You always hit the deadline and target.</p>
@@ -32,7 +35,7 @@ export default function Testimonial() {
                         <Row className="testing-class">
                             <Col className="feedback-slider col-sm-12 col-md-12 col-xs-12">
                                 <div className="feedback-slider-item col-sm-12 col-md-12 col-xs-12">
-                                    <img src="../../assets/images/janetk.jpeg" className="center-block img-circle" alt="Customer Feedback" />
+                                    <img src={Janet} className="center-block img-circle" alt="Customer Feedback" />
                                     <h3 className="customer-name">Kerr Janet</h3>
                                     <p className="the-customer">Medical Doctor</p>
                                     <p className="customer-says">
@@ -51,7 +54,7 @@ export default function Testimonial() {
                         <Row className="testing-class">
                             <Col className="feedback-slider col-sm-12 col-md-12 col-xs-12">
                                 <div className="feedback-slider-item col-sm-12 col-md-12 col-xs-12">
-                                    <img src="../../assets/images/atiiya.jpeg" className="center-block img-circle" alt="Customer Feedback" />
+                                    <img src={Atiiya} className="center-block img-circle" alt="Customer Feedback" />
                                     <h3 className="customer-name">Atiiya Innocent</h3>
                                     <p className="the-customer">Co-Founder GreenShuttles</p>
                                     <p className="customer-says">Tenda Africa has been the best agency we've worked with so far..</p>

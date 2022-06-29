@@ -6,10 +6,9 @@ import Services from '../../Components/ServicesComponent/Services';
 import Partners from '../../Components/PartnersComponent/Partners';
 import Products from '../../Components/ProductsComponent/Products';
 import Footer from '../../Components/FooterComponent/Footer';
-import Events from '../../Components/EventsComponent/Events';
+// import Events from '../../Components/EventsComponent/Events';
+import Map from '../../Components/MapComponent/Map';
 import Testimonial from '../../Components/TestimonialComponent/Testimonial';
-import Contact from '../ContactPage/Contact';
-import { Route, Routes, Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -21,7 +20,7 @@ export default function Home() {
         <Partners />
         <Products />
         <Testimonial />
-        <Events />
+        <Map />
         <Footer />
 
     </div>

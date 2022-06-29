@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Varela&family=Varela+Round&display=swap');
+.testimonial{
+	min-height: 500px;
+}
 .testimonial-head h4{
 	text-align: left;
 	padding-top: 1em;
 }
 .testimonial-wrapper{
   width: 80%;
+  height: 500px;
 
 }
 .feedback-slider-item img {
@@ -22,6 +26,7 @@
 .testing-class{
 	display: flex;
     justify-content: center;
+	align-items: stretch;
 }
 .feedback-slider{
   position: relative;
@@ -86,7 +91,7 @@
 	bottom: 0;
 	top: 103px;
 	/* background-color: #f6f6f6; */
-	background-color: orange;
+	background-color: maroon;
 	border: 1px solid rgba(251, 90, 13, 0.1);
 	border-radius: 10px;
 	z-index: -1;
@@ -99,4 +104,8 @@
 .carousel-main{
 	margin-bottom: 5em;
 	margin-top: 2em;
+	min-height: max-content;
+}
+.img-circle{
+	border: solid 1px maroon;
 }

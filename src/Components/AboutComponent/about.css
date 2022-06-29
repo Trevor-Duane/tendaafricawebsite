@@ -22,18 +22,20 @@
 }
 .our-story h4{
     text-align: left;
-    font-weight: bolder;
-    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    /* font-size: 2rem; */
 }
 .story{
     text-align: left;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: 'PT Sans', sans-serif;
 }
 .tenda{
-    display: flex;
+    display: flex;;
     justify-content: center;
     align-items: flex-start;
-    margin: 8em 0em 2em -3em;
+    margin: 2em 0em 2em -3em;
     
 }
 .tenda-box{
@@ -41,14 +43,19 @@
     width: max-content;
     min-width: max-content;
     display: flex;
-    border: solid 0.02rem #000;
+    /* border: solid 0.01rem orange; */
     justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    /* flex-direction: column; */
     background-color: rgba(252, 243, 226, 0.603);
     border-radius: 5px;
 
 }
+.tenda-box:hover{
+    background-color: maroon;
+    border: solid 0.01rem white;
+}
+
 .tenda-box h6{
     margin: 5px;
     font-size: 1.2rem;
@@ -60,6 +67,7 @@
 }
 .right-header h5{
     font-weight: bold;
+    color: maroon;
 }
 
 .button3{
@@ -81,15 +89,18 @@
 }
 .our{
     font-size: 0.8rem;
-    margin-left: 0 !important;
+    margin-left: 5px !important;
     border: none;
     /* display: inline; */
-    color: black;
+    color: #696969;
     outline: none;
     background: none!important;
     padding: 0!important;
     text-decoration: none;
     cursor: pointer;
+}
+.our:hover{
+    color: #ffffff !important;
 }
 .nav-pills .nav-link.active{
     color: #069;
@@ -132,9 +143,11 @@
 }
 .nav-pills .nav-link.active{
     color: orange !important;
+    font-weight: bold;
 }
 .nav-pills .nav-link:hover{
-    color: #cc5500;
+    color: #fff;
+    font-weight: bold;
 }
 .form-labelz{
     height: 30px !important;
@@ -148,4 +161,24 @@ input{
 }
 .form-message.active{
     color: #000;
+}
+.tenda-building{
+    background-color: #069;
+    height: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-size: cover;
+
+    /* background-image: url("../../assets/images/thouse.jpg"); */
+    background-image: url("https://img.freepik.com/free-photo/portrait-two-african-american-young-people-using-computers-while-working-software-development-office-copy-space_236854-34261.jpg");
+}
+.talk2us-button{
+    background-color: maroon;
+    border: solid 1px maroon;
+    font-weight: bold;
+}
+.talk2us-button:hover{
+    border: none;
+    background-color: #ec9706;
 }

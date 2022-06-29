@@ -44,7 +44,7 @@ export default function Products() {
                   <div className="col-sm-1 the-products-wrapper">
                   </div>
                   <div className="col-sm-12 the-products">
-                  <Tabs filterCategory={filterCategory} tabsData={tabsData}/>
+                  <Tabs className="pdt-tabs" filterCategory={filterCategory} tabsData={tabsData}/>
                   <Items data={data} />
                   </div>
                   <div className="col-sm-1">

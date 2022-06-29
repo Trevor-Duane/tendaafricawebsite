@@ -21,13 +21,13 @@ export default function Partners() {
 
                     <div className="why-trust">
                         <p>
-                            TENDA builds so ware that lets people do things di erently.
+                            TENDA builds so ware that lets people do things differently.
                             share your challenge with out team and we'll work with you
                             to deliver a revolutionary product
                         </p>
 
                         <p>
-                            This is who we have worked with and they always trsut us
+                            This is who we have worked with and they always trust us
                         </p>
                     </div>
                     <div className="partner-image-wrapper2  d-md-none d-lg-none d-xl-none">
@@ -36,8 +36,17 @@ export default function Partners() {
                     </div>
 
                     <div className="the-partners">
+                        <div className="the-real-partner">
 
-                        <Carousel  className="carousel-inner" indicators={ false }>
+                        </div>
+                        <div className="the-real-partner2">
+                            
+                        </div>
+                        <div className="the-real-partner1">
+                            
+                        </div>
+
+                        {/* <Carousel  className="carousel-inner" indicators={ false }>
                             <Carousel.Item className="item p-5" interval={5000}>
                                 <div className="the-partner">
                                     <Image className="slider-imagez" src={ partner1 } alt="TendaCafe logo"/>
@@ -49,17 +58,13 @@ export default function Partners() {
                                     <Image className="slider-imagez" src={ partner2 }  alt="Hudusoft logo" />
                                 </div>
                             </Carousel.Item>
-                        </Carousel>
+                        </Carousel> */}
     
                     </div>
                 </Col>
 
                 <Col className="partners-right d-sm-none d-md-block d-none d-sm-block">
-                    <div className="partner-image-wrapper">
-                        <Image src={ partner } className="partner-image" alt="partner-image" />
-
-                    </div>
-
+                    <div className="partner-image-wrapper"></div>
                 </Col>
             </Row>
             </Container>

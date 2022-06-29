@@ -14,11 +14,13 @@
     text-align: center;
 }
 .our-product h4{
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
+    font-family: 'PT Sans', sans-serif;
 }
 .product-para{
-    font-size: 14px;
+    font-size: 13px;
+    font-family: 'PT Sans', sans-serif;
     text-align: center;
     /* margin-left: 12%; */
 }
@@ -29,13 +31,14 @@
         margin: 10px 10px 10px 0px;
         /* padding: 10px 25px; */
         color: #ffffff;
-        background-color: orange;
+        background-color: maroon;
         text-align: center;
         cursor: pointer;
 }
 .portfolio-buttons:active{
     border: none !important;
     background-color: orange !important;
+    outline: none !important;
     color: black !important;
 }
 .portfolio-buttons:hover{
@@ -46,4 +49,3 @@
 .product-description{
     font-size: 13px;
 }
-

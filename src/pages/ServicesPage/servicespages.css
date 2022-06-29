@@ -1,0 +1,111 @@
+.crumb-banner-services{
+    background-image: url("../../assets/images/s3.jpg");  
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+    font-family: 'PT Sans', sans-serif;
+
+}
+.overlay-services {
+    background:rgba(0,0,0,0.3);
+    overflow: hidden;
+    height: 100%;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #fff;
+}
+.breadcrumb >.active{
+    color: #cc5500;
+    text-decoration: none;
+ }
+ 
+.crumb-link{
+    padding: 10px;
+    margin-left: 125px;
+}
+.crumb-text-services{
+    margin: auto;
+    width: 60%;
+   
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.crumb-head-services{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+}
+.crumb-head-services h2 > span{
+    color: orange;
+}
+.crumb-para-services{
+    text-align: center;
+    color: #fff;
+}
+.service-nav-main{
+    background-color: #fff;
+}
+.services-nav{
+    width: 80%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.service-link{
+    color: #505050;
+}
+.service-link.active{
+    color: maroon;
+}
+.service-link:hover{
+    color: orange;
+}
+.service-desc-head{
+    width: 70%;
+}
+.service-hl{
+    color: maroon;
+}
+.service-intro-section{
+    margin-top: 150px;
+}
+.service-intro-section  h4{
+    width: 55%;
+}
+.service-side-para{
+    width: 80%;
+    font-size: 22px;
+}
+.inside-head{
+    color: orange;
+    text-decoration: underline;
+}
+.service-list{
+    width: 70%;
+}
+.detail-service-section{
+    margin-top: 80px;
+}
+.button-sect{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.talk2us-service-button{
+    background-color: maroon;
+    color: #fff;
+    outline: none;
+    border: solid 1px maroon;
+}
+.talk2us-service-button:hover{
+    background-color: #cc5500;
+    border: none;
+}

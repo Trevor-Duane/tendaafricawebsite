@@ -25,17 +25,18 @@
     text-align: center;
 }
 .our-service h4{
-    /* font-size: 2vw; */
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
+    font-family: 'PT Sans', sans-serif;
 }
 .service-para{
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
-    /* margin-left: 12%; */
+    font-family: 'PT Sans', sans-serif;
 }
 .grid-icon{
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-left: 1em;
 }
 .show-grid{
     display: flex;
@@ -59,12 +60,21 @@
      border-radius: 5px;
      border: solid .5px #000;
  }
- .grid2{
+ .grid2-web{
      background-color: #ffffff;
      margin-top: 2em;
      border-radius: 5px;
      border: solid .5px #000;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-image: url("../../assets/images/webd.png");
 
+ }
+ .service-overlay{
+    background:rgba(0,0,0,0.6);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
  }
  .grid3{
      background-color: #ffffff;
@@ -97,4 +107,16 @@
     margin-top: 2em;
     text-align: center;
 }
- 
+.grid-service h4{
+    font-weight: bolder;
+    color: #ffffff;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+}
+.grid-service-web{
+    /* background-image: url("../../assets/images/webd.png"); */
+    background-color: red;
+    padding: .5em;
+    margin-top: 2em;
+    text-align: center;
+    background-size: cover;
+}

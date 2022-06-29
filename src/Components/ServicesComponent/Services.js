@@ -35,13 +35,15 @@ export default function Services() {
                         </div>
                     </Col>
 
-                    <Col className="grid2" xs={12} md={3}>
-                    <div className='grid-icon'> 
-                            <FaCode size={72} color="Orange"/>
-                        </div>
+                    <Col className="grid2-web p-0" xs={12} md={3}>
+                        <div className="service-overlay">
+                            <div className='grid-icon'> 
+                                <FaCode size={52} color="#fff"/>
+                            </div>
 
-                        <div className='grid-service'>
-                            <h6>Web Development</h6>
+                            <div className='grid-service'>
+                                <h4>Web Development</h4>
+                            </div>
                         </div>
                     </Col>
 

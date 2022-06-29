@@ -16,15 +16,17 @@
 }
 .our-partners h4{
     text-align: left;
-    font-weight: bolder;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
 }
 .why-trust{
     text-align: left;
-    font-size: 14px
+    font-size: 13px;
+    font-family: 'PT Sans', sans-serif;
 }
 .the-partners{
-    margin: 10em 0em 5em 0em;
-    /* background-color: red; */
+    margin: 5em 0em 5em 0em;
+    display: flex;
 }
 .slider-imagez{
     height: 50px;
@@ -42,6 +44,11 @@
     border-radius: 5px;
 }
 .partner-image-wrapper{
+    background-image: url("../../assets/images/partner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
     height: 100%;
     width: 100%;
 }
@@ -61,4 +68,25 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+.the-real-partner{
+    background-image: url("../../assets/images/p1.PNG");
+    background-size: cover;
+    width: 90px;
+    height: 50px;
+    filter: grayscale();
+}
+.the-real-partner1{
+    background-image: url("../../assets/images/p2.png");
+    background-size: cover;
+    width: 170px;
+    height: 50px;
+    filter: grayscale();
+}
+.the-real-partner2{
+    background-image: url("../../assets/images/p3.png");
+    background-size: cover;
+    width: 129px;
+    height: 105px;
+    filter: grayscale();
 }

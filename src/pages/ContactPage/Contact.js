@@ -46,7 +46,7 @@ export default function Contact() {
     <div>
         <Navigation />
         {/* <Banner /> */}
-        <section className="crumb-banner">
+        <section className="crumb-banner2">
           <div className="overlay">
             <div className="crumb-link">
                 <Breadcrumb>
@@ -61,9 +61,7 @@ export default function Contact() {
                 <div className="crumb-para">
                     <p> Before we start, we would like to better understand your needs. We’ll review your application and schedule a free estimation call.</p>
                 </div>
-                <div className="crumb-button">
-                    <Button className="crumb-contact">Get Started<BsArrowRightShort /></Button>
-                </div>
+                
             </div>
           </div>
     </section>

@@ -2,9 +2,11 @@ import React from 'react';
 import { FaEye } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom'
 import { BsFillChatTextFill, BsBullseye, BsWind } from 'react-icons/bs';
-import { Row, Col, Form, Nav, Tab, Container, Image } from 'react-bootstrap';
+import { Row, Col, Form, Nav, Tab, Container, Image, Button } from 'react-bootstrap';
 import './about.css';
+import thouse from '../../assets/images/thouse.jpg';
 
 const SERVICE_ID = "service_d8gt2ao";
 const TEMPLATE_ID = "template_7prfutg";
@@ -50,32 +52,45 @@ export default function About() {
                       <div className='story'>
                         <p>
                           Tenda Africa Limited(Tenda) is a registered private limited company
-                          incorporated in the year 2018 in Ugana, Eastern Africa to provide 
+                          incorporated in the year 2018 in Ugand  a, Eastern Africa to provide 
                           high quality standard ICT services, IT supplies, software development
-                          and systems intergration to their clients
+                          and systems intergration to their clients.
                         </p>
+
 
                         <p>
                           TENDA is comprised of experts/professionals with wealth of experience
                           in implementing small to complex enterprise ICT systems for a variety
-                          of organisations
+                          of organisations. We have developed software products to address different
+                          needs for private and public institutions, small, middle sized and corporate organizations. 
+                          All of our products are browser based, easy to use, robust and above all 
+                          affordable.
+                        </p>
+
+                        <p>
+                          TENDA's objective is to help organizations in designing and implementing
+                           IT Systems that optimize business processes and leverage corporate knowledge
+                            leading to their competitive advantage. We provide business process analysis 
+                            and systems design for both custom developed and customized systems. 
+                            Our team provides technical expertise during implementation, training 
+                            and post implementation support services
                         </p>
                       </div>
               <Nav variant="pills" className="flex-row tenda" >
                 <Nav.Item className="m-1 tenda-box" sm="12">
-                  <BsFillChatTextFill size={32} color="Orange"/>
-                  <Nav.Link eventKey="first" className="our">Quick Contact</Nav.Link>
+                  <BsFillChatTextFill size={28} color="Orange"/>
+                  <Nav.Link eventKey="first" className="our">Talk to us</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="m-1 tenda-box" sm="12">
-                  <FaEye size={32} color="Orange"/>
+                  <FaEye size={28} color="Orange"/>
                   <Nav.Link eventKey="second" className="our">Our Vision</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="m-1 tenda-box" sm="12">
-                  <BsBullseye size={32} color="Orange"/>
+                  <BsBullseye size={28} color="Orange"/>
                   <Nav.Link eventKey="third" className="our">Our Mission</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="m-1 tenda-box" sm="12">
-                  <BsWind size={32} color="Orange"/>
+                  <BsWind size={28} color="Orange"/>
                   <Nav.Link eventKey="fourth" className="our">Key Success</Nav.Link>
                 </Nav.Item>
               </Nav>
@@ -86,32 +101,14 @@ export default function About() {
                 <Tab.Pane eventKey="first">
                 <div className="form-section">
                             <div className="right-header">
-                                <h5>Contact Us</h5>
+                                <h5>We're Tenda Africa</h5>
+                                <p>You need to talk to us. We're here to listen.</p>
                             </div>
-
-                            <Form className="form2" onSubmit={handleOnSubmit}>
-                              <p>You need to talk to us. We're here to listen.</p>
-                              <Row>
-                                <Col md={6} sm={12} xs={12}>
-                                <label className="form-labez">Name</label>
-                                <input className="form-labelz form-control" name="from_name"/></Col>
-                                <Col md={6} sm={12} xs={12}>
-                                <label className="form-labez">Email Address</label>
-                                <input className="form-labelz form-control" name="from_email"/></Col>
-                              </Row>
-                              <Row className="mb-3">
-                                <Col md={6} sm={12} xs={12}>
-                                <label className="form-labez">Phone Number</label>
-                                <input className="form-labelz form-control" name="phone_number"/></Col>
-                                <Col md={6} sm={12} xs={12}s>
-                                <label className="form-labez">Subject</label>
-                                <input className="form-labelz form-control" name="from_subject"/></Col>
-                              </Row>
-                              <label>Message</label>
-                              <textarea name="message" className="form-control form-message" rows={3}/>
-                      
-                              <input className="submitButton" type="submit" />
-                            </Form>
+                            <div className="tenda-building">
+                            </div>
+                            <Link to="/contact">
+                              <Button className="talk2us-button">Send us a message</Button>
+                            </Link>
                         </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second" className="short">
