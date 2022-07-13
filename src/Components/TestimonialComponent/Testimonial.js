@@ -39,9 +39,8 @@ export default function Testimonial() {
                                     <h3 className="customer-name">Kerr Janet</h3>
                                     <p className="the-customer">Medical Doctor</p>
                                     <p className="customer-says">
-                                        The TendaAfrica Team and their support is second to none. They are proficient, accessible; they are so good at what they do.
-                                        I’ve had a long-lasting partnership with Tenda. They always try to make things possible.
-                                    </p>
+                                        The TendaAfrica Team & their support is second to none. They are proficient, accessible;they are so good at what they do.
+                                   </p>
                                     <span className="light-bg customer-rating" data-rating="5">
                                         5<AiFillStar className="rate-star" />
                                     </span>

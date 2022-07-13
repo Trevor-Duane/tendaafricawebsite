@@ -28,7 +28,7 @@ export default function Upper() {
                     <p>IT Systems Review and security Audits</p>
                     <p>Biometric Systems and Intergration</p>
                     <p>Provide Business Automation</p>
-                    <p>data Analysis and visualisation</p>
+                    <p>Data Analysis and visualisation</p>
                     <p>Oracle Technology Experts</p>
                     </div>
 
@@ -43,7 +43,6 @@ export default function Upper() {
                     <p>Life@Tenda</p>
                     <p>Partners</p>
                     <p>Careers</p>
-                    <p>Certifications</p>
                     </div>
 
                 </Col>

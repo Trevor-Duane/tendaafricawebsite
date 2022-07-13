@@ -25,70 +25,85 @@ export default function Services() {
             </div>
             <div className="services-grid">
                 <Row className="show-grid">
-                    <Col  className="grid1" xs={12} md={3}>
-                        <div className='grid-icon'> 
-                            <FaThinkPeaks size={72} color="Orange"/>
-                        </div>
-
-                        <div className='grid-service'>
-                            <h6>Ideation and Evaluation</h6>
-                        </div>
-                    </Col>
-
-                    <Col className="grid2-web p-0" xs={12} md={3}>
+                    <Col  className="grid1 p-0 mx-0" xs={12} md={3}>
                         <div className="service-overlay">
                             <div className='grid-icon'> 
-                                <FaCode size={52} color="#fff"/>
+                                <FaThinkPeaks size={18} color="white"/>
+                            </div>
+
+                            <div className='grid-service'>     
+                            </div>
+                        </div>
+                        <h6>Ideation and Evaluation</h6>
+                    </Col>
+
+                    <Col className="grid2 p-0" xs={12} md={3}>
+                        <div className="service-overlay">
+                            <div className='grid-icon'> 
+                                <FaCode size={18} color="white"/>
                             </div>
 
                             <div className='grid-service'>
-                                <h4>Web Development</h4>
+                                {/* <h6>Web Development</h6> */}
                             </div>
                         </div>
+                        <h6>Web Development</h6>
                     </Col>
 
-                    <Col className="grid3" xs={12} md={3}>
-                        <div className='grid-icon'> 
-                            <FaTools size={72} color="Orange"/>
-                        </div>
+                    <Col className="grid3 p-0" xs={12} md={3}>
+                        <div className="service-overlay">
+                            <div className='grid-icon'> 
+                                <FaTools size={18} color="white"/>
+                            </div>
 
-                        <div className='grid-service'>
-                            <h6>Product Design</h6>
+                            <div className='grid-service'>
+                                {/* <h6>Product Design</h6> */}
+                            </div>
                         </div>
+                        <h6>Product Design</h6>
                     </Col>
                     
 
                 </Row>
 
                 <Row className="show-grid2">
-                    <Col  className="grid4" xs={12} md={3}>
-                    <div className='grid-icon'> 
-                            <FaAndroid size={72} color="Orange"/>
-                        </div>
+                    <Col  className="grid4 p-0" xs={12} md={3}>
+                        <div className="service-overlay">
+                            <div className='grid-icon'> 
+                                <FaAndroid size={18} color="white"/>
+                            </div>
 
-                        <div className='grid-service'>
-                            <h6>Mobile Development</h6>
+                            <div className='grid-service'>
+                                {/* <h6>Mobile Development</h6> */}
+                            </div>
                         </div>
+                        <h6>Mobile Development</h6>
                     </Col>
 
-                    <Col className="grid5" xs={12} md={3}>
-                    <div className='grid-icon'> 
-                            <BsClipboardData size={72} color="Orange"/>
-                        </div>
+                    <Col className="grid5 p-0" xs={12} md={3}>
+                        <div className="service-overlay">
+                            <div className='grid-icon'> 
+                                <BsClipboardData size={18} color="white"/>
+                            </div>
 
-                        <div className='grid-service text-nowrap'>
-                            <h6>Data Analysis & Visualization</h6>
+                            <div className='grid-service text-nowrap'>
+                                {/* <h6>Data Analysis & Visualization</h6> */}
+                            </div>
                         </div>
+                        <h6>Data Analysis & Visualization</h6>
                     </Col>
 
-                    <Col className="grid6" xs={12} md={3}>
-                    <div className='grid-icon'> 
-                            <BsSignal size={72} color="Orange"/>
-                        </div>
+                    <Col className="grid6 p-0" xs={12} md={3}>
+                        <div className="service-overlay">
+                            <div className='grid-icon'> 
+                                <BsSignal size={18} color="white"/>
+                            </div>
 
-                        <div className='grid-service'>
-                            <h6>Digital Transformation</h6>
+                            <div className='grid-service'>
+                                {/* <h6>Digital Transformation</h6> */}
+                            </div>
                         </div>
+                        <h6>Digital Transformation</h6>
                     </Col>
 
                 </Row>

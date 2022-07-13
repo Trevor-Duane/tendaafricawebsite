@@ -7,6 +7,7 @@ import { Breadcrumb } from 'react-bootstrap';
 import Footer from '../../Components/FooterComponent/Footer';
 import Jobs from './Jobs';
 import Job from './Job';
+import NoJobs from './NoJobs';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 
@@ -75,9 +76,9 @@ export default function Contact() {
           <Col>
             <div className="career-mission">
               <div className="career-mission-head">
-                <h1>Working at Tenda means comfronting challenges
+                <h2>Working at Tenda means comfronting challenges
                   with <strong>innovation, dedication and passion</strong>
-                </h1>
+                </h2>
               </div>
               
             </div>
@@ -112,7 +113,7 @@ export default function Contact() {
             <Col>
               <div className="perks">
                 <div className="perks-head">
-                  <h1>Perks and Benefits</h1>
+                  <h2>Perks and Benefits</h2>
                 </div>
                 
               </div>
@@ -139,11 +140,12 @@ export default function Contact() {
     <section className="jobs-section container-fluid">
       <Container className="jobs-section-wrapper">
         <div className="jobs-head">
-          <h1>Our Open Vacancies</h1>
+          <h2>Our Open Vacancies</h2>
         </div>
 
         <div className="jobs">
-          <Job jobs={jobs}/>    
+          {/* <Job jobs={jobs}/>     */}
+          <NoJobs />
         </div>
 
       </Container>
@@ -153,7 +155,7 @@ export default function Contact() {
         <Row>
           <Col>
               <div className="values-head">
-                <h1>Core Values</h1>
+                <h2>Core Values</h2>
                 <p>
                   We celebrate diversity and are committed 
                   to creating an inclusive environment for all 
@@ -184,7 +186,7 @@ export default function Contact() {
     </section>
     <section className="office-location-section">
       <div className="office-location-head container">
-        <h1>Our Offices</h1>
+        <h2>Our Offices</h2>
       </div>
       <iframe className="office-location" title="tenda-location" width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Tenda%20Africa%20Limited,%20Kampala%20-%20Entebbe%20Rd,%20Kampala&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </section>

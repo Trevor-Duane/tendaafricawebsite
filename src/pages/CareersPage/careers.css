@@ -67,11 +67,11 @@
 .career-mission-head{
     width: 60%;
 }
-.career-mission-head h1{
+.career-mission-head h2{
     color: maroon;
 }
 .career-mission-para{
-    font-size: 22px;
+    font-size: 16px;
 }
 
 /*css for the perks section*/
@@ -95,7 +95,7 @@
     line-height: 3rem;
 }
 .perks-para ul li{
-    font-size: 22px;
+    font-size: 16px;
 }
 .perks-para ul li::before{
     content: '';
@@ -116,7 +116,7 @@
 .jobs-section-wrapper{
     width: 80%;
 }
-.jobs-head h1{
+.jobs-head h2{
     color: maroon;
     margin-top: 1em;
 }
@@ -127,19 +127,20 @@
 /*value section css*/
 .values-section{
     margin-top: 2em;
+    display: block;
+    position: relative;
 }
 .values-section-wrapper{
     width: 80%;
-    height: 450px;
-    max-height: 460px;
+    display: block;
 }
-.values-head h1{
+.values-head h2{
     color: maroon;
     margin-top: 1em;
 }
 .values-head p{
     width: 60%;
-    font-size: 22px;
+    font-size: 18px;
 }
 .core-values-carousel{
     margin-top: 2em;
@@ -148,10 +149,14 @@
     border-radius: 8px;
 }
 /*office location css*/
+.office-location-section{
+    display: block;
+    margin: auto;
+}
 .office-location-head{
     width: 80%;
 }
-.office-location-head h1{
+.office-location-head h2{
     color: maroon;
     margin-top: 1em;
 }

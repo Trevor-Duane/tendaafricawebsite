@@ -74,19 +74,19 @@
     background-size: cover;
     width: 90px;
     height: 50px;
-    filter: grayscale();
+    /* filter: grayscale(); */
 }
 .the-real-partner1{
     background-image: url("../../assets/images/p2.png");
     background-size: cover;
-    width: 170px;
+    width: 160px;
     height: 50px;
-    filter: grayscale();
+    /* filter: grayscale(); */
 }
 .the-real-partner2{
     background-image: url("../../assets/images/p3.png");
     background-size: cover;
     width: 129px;
     height: 105px;
-    filter: grayscale();
+    /* filter: grayscale(); */
 }

@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Button, Nav, Image } from 'react-bootstrap';
 import Navigation from '../../Components/NavbarComponent/Navigationbar';
 import { Breadcrumb } from 'react-bootstrap';
 import Footer from '../../Components/FooterComponent/Footer';
-
+import ideation from '../../assets/images/ideation.png';
+import pdesign from '../../assets/images/pdesign.png';
+import webdev from '../../assets/images/webdev.png';
+import visual from '../../assets/images/visual.png';
+import mdev from '../../assets/images/mdev.png';
 import './servicespages.css';
 
 export default function ServicesPage() {
@@ -78,6 +82,7 @@ export default function ServicesPage() {
             <Col>
             <h4>Ideation and <span className="service-hl">Evaluation</span></h4>
             <p className="service-side-para">start your project with us or take existing one to next level</p>
+            <Image fluid src={ideation} alt="ideation and evaluation" />
             </Col>
             <Col>
                 <p className="service-side-para">
@@ -104,6 +109,7 @@ export default function ServicesPage() {
           <Col>
             <h4>Product <span className="service-hl">Design</span></h4>
             <p className="service-side-para">Great design is an iterative process of resolving problems and continual improvement to make your product the best it can be</p>
+            <Image fluid src={pdesign} alt="product design" />
           </Col>
           <Col>
             <p className="service-side-para">
@@ -132,6 +138,7 @@ export default function ServicesPage() {
           <Col>
             <h4>Web <span className="service-hl">Development</span></h4>
             <p className="service-side-para">Create beautiful, fast and secure web applications tailored exclusively for your business goals.</p>
+            <Image fluid src={webdev} alt="Web Development" />
           </Col>
           <Col>
             <p className="service-side-para">
@@ -160,7 +167,8 @@ export default function ServicesPage() {
         <Row>
           <Col>
             <h4>Mobile <span className="service-hl">Development</span></h4>
-            <p className="service-side-para">Build well-designed and optimized custom mobile applications with a delightful UX for both iOS and Android.  </p>
+            <p className="service-side-para">Build well-designed and optimized custom mobile applications with a delightful UX for both iOS and Android.</p>
+            <Image fluid src={mdev} alt="mobile development" />
           </Col>
           <Col>
             <p className="service-side-para">
@@ -190,6 +198,7 @@ export default function ServicesPage() {
           <Col>
             <h4 className="service-desc-head">Machine learning, data science, business intelligence and <span className="service-hl">digital transformation</span></h4>
             <p className="service-side-para">Data science solutions turn your data into a competitive advantage</p>
+            <Image fluid src={visual} alt="data visualization" />
           </Col>
           <Col>
             <p className="service-side-para">

@@ -30,10 +30,10 @@ export default function Partners() {
                             This is who we have worked with and they always trust us
                         </p>
                     </div>
-                    <div className="partner-image-wrapper2  d-md-none d-lg-none d-xl-none">
+                    {/* <div className="partner-image-wrapper2  d-md-none d-lg-none d-xl-none">
                         <Image src={ partner } className="partner-image2 col-sm-12 col-xs-12 img-thumbnail d-block img-fluid" alt="partner-image" />
 
-                    </div>
+                    </div> */}
 
                     <div className="the-partners">
                         <div className="the-real-partner">
@@ -45,26 +45,12 @@ export default function Partners() {
                         <div className="the-real-partner1">
                             
                         </div>
-
-                        {/* <Carousel  className="carousel-inner" indicators={ false }>
-                            <Carousel.Item className="item p-5" interval={5000}>
-                                <div className="the-partner">
-                                    <Image className="slider-imagez" src={ partner1 } alt="TendaCafe logo"/>
-                                </div>
-                            </Carousel.Item>
-
-                            <Carousel.Item className="item p-5" interval={5000}>
-                                <div className="the-partner">
-                                    <Image className="slider-imagez" src={ partner2 }  alt="Hudusoft logo" />
-                                </div>
-                            </Carousel.Item>
-                        </Carousel> */}
     
                     </div>
                 </Col>
 
                 <Col className="partners-right d-sm-none d-md-block d-none d-sm-block">
-                    <div className="partner-image-wrapper"></div>
+                    <div className="partner-image-wrapper img-fluid"></div>
                 </Col>
             </Row>
             </Container>

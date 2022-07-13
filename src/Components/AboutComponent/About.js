@@ -1,43 +1,20 @@
 import React from 'react';
 import { FaEye } from 'react-icons/fa';
-import emailjs from 'emailjs-com';
-import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import vision from '../../assets/images/about-vision.jpg';
+import mision from '../../assets/images/about-mission.jpg';
+import plan from '../../assets/images/about-plan.jpg';
 import { BsFillChatTextFill, BsBullseye, BsWind } from 'react-icons/bs';
 import { Row, Col, Form, Nav, Tab, Container, Image, Button } from 'react-bootstrap';
 import './about.css';
 import thouse from '../../assets/images/thouse.jpg';
 
-const SERVICE_ID = "service_d8gt2ao";
-const TEMPLATE_ID = "template_7prfutg";
-const USER_ID = "Xd5tpxIrR_xFrbAC4";
+
 
 export default function About() {
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-      .then((result) => {
-        console.log(result.text);
-        Swal.fire({
-          icon: 'success',
-          title: 'Message Sent Successfully',
-          iconColor: 'orange',
-          confirmButtonColor: '#000000',
-          confirmButtonTextColor: '#ffffff'
-        })
-      }, (error) => {
-        console.log(error.text);
-        Swal.fire({
-          icon: 'error',
-          title: 'Ooops, something went wrong',
-          text: error.text,
-        })
-      });
-    e.target.reset()
-  };
   return (
     <div className="about-section" id="about-us">
-      <Container className="about-wrapper">
+      <Container className="about-wrapper d-sm-none d-md-block d-none d-sm-block">
         <Tab.Container className="sameh" id="left-tabs-example" defaultActiveKey="first">
           <Row>
             <Col sm={12} md={6} lg={6} className="samehh-2">
@@ -113,7 +90,7 @@ export default function About() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second" className="short">
                   <div className="not-this">
-                    <Image className="pane-image img-thumbnail" src="https://tendaafrica.com/img/about-vision.jpg" alt="mission"/>
+                    <Image className="pane-image img-thumbnail" src={vision} alt="mission"/>
                     <h5 className="mt-5">Our Vision</h5>
                     <p className="mt-2 now-this">Tenda’s vision is to be the leading Enterprise ICT Services Provider in the region.</p>
                   </div>
@@ -121,14 +98,14 @@ export default function About() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   <div className="not-this">
-                    <Image className="pane-image img-thumbnail" src="https://tendaafrica.com/img/about-mission.jpg" alt="mission"/>
+                    <Image className="pane-image img-thumbnail" src={mision} alt="mission"/>
                     <h5 className="mt-5">Our Mission</h5>
                     <p className="mt-2 now-this">To help organizations automate their business processes in order to achieve efficiency, resource optimization and profitability.</p>
                   </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="fourth">
                   <div className="not-this">
-                      <Image className="pane-image img-thumbnail" src="https://tendaafrica.com/img/about-plan.jpg" alt="mission"/>
+                      <Image className="pane-image img-thumbnail" src={plan} alt="mission"/>
                       <h5 className="mt-2">Keys Of Success</h5>
                       <p className="now-this">The success of our company is dependent on our ability to:</p>
                     <ul className="keys">
@@ -144,6 +121,56 @@ export default function About() {
             </Col>
           </Row>
         </Tab.Container>
+      </Container>
+      <Container className="about-wrapper2 d-block d-sm-none">
+            <div className='about-tenda-mobi'>
+              <h6>All About Us</h6>
+            </div>
+
+            <div className='our-story-mobi'>
+              <h4>OUR STORY</h4>
+            </div>
+
+            <div className='story-mobi'>
+              <p>
+                Tenda Africa Limited(Tenda) is a registered private limited company
+                incorporated in the year 2018 in Ugand  a, Eastern Africa to provide 
+                high quality standard ICT services, IT supplies, software development
+                and systems intergration to their clients.
+              </p>
+              <p>
+                TENDA's objective is to help organizations in designing and implementing
+                  IT Systems that optimize business processes and leverage corporate knowledge
+                  leading to their competitive advantage. We provide business process analysis 
+                  and systems design for both custom developed and customized systems. 
+                  Our team provides technical expertise during implementation, training 
+                  and post implementation support services
+              </p>
+            </div>
+            <div className="about-summary">
+              <div className="what-makes-us-tenda">
+                <h6>Our Mission</h6>
+                <p>To help organizations automate their business processes in order to achieve efficiency, resource optimization and profitability.</p>
+              </div>
+
+              <div className="what-makes-us-tenda">
+                <h6>Our Vision</h6>
+                <p>Tenda’s vision is to be the leading Enterprise ICT Services Provider in the region</p>.
+              </div>
+
+              <div className="what-makes-us-tenda">
+                <h6>Keys to our success</h6>
+                <p>The success of our company is dependent on our ability to:</p>
+                <ul>
+                  <li>Anticipate clients’ needs.</li>
+                  <li>Adapt software solutions to these needs</li>
+                  <li>Identify industries/corporations/departments that need planning tools.</li>
+                  <li>Apply professional approach to all our services.</li>
+                  <li>Provide a hybrid of expertise and experience to problem resolution.</li>
+                </ul>
+              </div>
+            </div>
+            
       </Container>
     </div>
   )
