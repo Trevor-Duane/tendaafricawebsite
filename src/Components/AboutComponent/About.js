@@ -17,8 +17,8 @@ export default function About() {
       <Container className="about-wrapper d-sm-none d-md-block d-none d-sm-block">
         <Tab.Container className="sameh" id="left-tabs-example" defaultActiveKey="first">
           <Row>
-            <Col sm={12} md={6} lg={6} className="samehh-2">
-            <div className='about-tenda'>
+            <Col sm={12} md={6} lg={6} className="samehh-2 p-0 m-0">
+            <div className="about-tenda">
                         <h6>All About Us</h6>
                       </div>
 

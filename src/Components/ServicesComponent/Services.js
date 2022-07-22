@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, NavLink } from 'react-bootstrap';
 import { BsSignal, BsClipboardData } from 'react-icons/bs';
 import { FaThinkPeaks, FaCode, FaTools, FaAndroid } from 'react-icons/fa';
 import './services.css';
@@ -25,7 +25,7 @@ export default function Services() {
             </div>
             <div className="services-grid">
                 <Row className="show-grid">
-                    <Col  className="grid1 p-0 mx-0" xs={12} md={3}>
+                    <Col  className="grid1 h6grid p-0" xs={12} md={3}>
                         <div className="service-overlay">
                             <div className='grid-icon'> 
                                 <FaThinkPeaks size={18} color="white"/>
@@ -34,10 +34,10 @@ export default function Services() {
                             <div className='grid-service'>     
                             </div>
                         </div>
-                        <h6>Ideation and Evaluation</h6>
+                        <NavLink><h6>Ideation and Evaluation</h6></NavLink>
                     </Col>
 
-                    <Col className="grid2 p-0" xs={12} md={3}>
+                    <Col className="grid2 h6grid p-0" xs={12} md={3}>
                         <div className="service-overlay">
                             <div className='grid-icon'> 
                                 <FaCode size={18} color="white"/>
@@ -47,10 +47,10 @@ export default function Services() {
                                 {/* <h6>Web Development</h6> */}
                             </div>
                         </div>
-                        <h6>Web Development</h6>
+                        <NavLink><h6>Web Development</h6></NavLink>
                     </Col>
 
-                    <Col className="grid3 p-0" xs={12} md={3}>
+                    <Col className="grid3 h6grid p-0" xs={12} md={3}>
                         <div className="service-overlay">
                             <div className='grid-icon'> 
                                 <FaTools size={18} color="white"/>
@@ -60,14 +60,14 @@ export default function Services() {
                                 {/* <h6>Product Design</h6> */}
                             </div>
                         </div>
-                        <h6>Product Design</h6>
+                        <NavLink><h6>Product Design</h6></NavLink>
                     </Col>
                     
 
                 </Row>
 
                 <Row className="show-grid2">
-                    <Col  className="grid4 p-0" xs={12} md={3}>
+                    <Col  className="grid4 h6grid p-0" xs={12} md={3}>
                         <div className="service-overlay">
                             <div className='grid-icon'> 
                                 <FaAndroid size={18} color="white"/>
@@ -77,10 +77,10 @@ export default function Services() {
                                 {/* <h6>Mobile Development</h6> */}
                             </div>
                         </div>
-                        <h6>Mobile Development</h6>
+                        <NavLink><h6>Mobile Development</h6></NavLink>
                     </Col>
 
-                    <Col className="grid5 p-0" xs={12} md={3}>
+                    <Col className="grid5 h6grid p-0" xs={12} md={3}>
                         <div className="service-overlay">
                             <div className='grid-icon'> 
                                 <BsClipboardData size={18} color="white"/>
@@ -90,10 +90,10 @@ export default function Services() {
                                 {/* <h6>Data Analysis & Visualization</h6> */}
                             </div>
                         </div>
-                        <h6>Data Analysis & Visualization</h6>
+                        <NavLink><h6>Data Analysis & Visualization</h6></NavLink>
                     </Col>
 
-                    <Col className="grid6 p-0" xs={12} md={3}>
+                    <Col className="grid6 h6grid p-0" xs={12} md={3}>
                         <div className="service-overlay">
                             <div className='grid-icon'> 
                                 <BsSignal size={18} color="white"/>
@@ -103,7 +103,7 @@ export default function Services() {
                                 {/* <h6>Digital Transformation</h6> */}
                             </div>
                         </div>
-                        <h6>Digital Transformation</h6>
+                        <NavLink><h6>Digital Transformation</h6></NavLink>
                     </Col>
 
                 </Row>

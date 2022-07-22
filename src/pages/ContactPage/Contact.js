@@ -50,7 +50,7 @@ export default function Contact() {
           <div className="overlay">
             <div className="crumb-link">
                 <Breadcrumb>
-                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item active>Contact Us</Breadcrumb.Item>
                 </Breadcrumb>
             </div>

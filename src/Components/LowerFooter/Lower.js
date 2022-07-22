@@ -12,10 +12,10 @@ export default function Lower() {
             </div>
 
             <div md={12} sm={12} xs={12} className="social">
-                <FaTwitter className="icons" size={32} />
-                <FaFacebook className="icons" size={32} />
-                <FaGithub className="icons" size={32} />
-                <FaLinkedinIn className="icons" size={32} />
+                <FaTwitter className="icons" size={28} />
+                <FaFacebook className="icons" size={28} />
+                <FaGithub className="icons" size={28} />
+                <FaLinkedinIn className="icons" size={28} />
                 
 
             </div>

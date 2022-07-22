@@ -1,4 +1,9 @@
 import React from 'react';
+import {NavLink} from 'react-bootstrap';  
+import Blast from '../../assets/files/HoduBLAST Brochure.pdf';
+import CC from '../../assets/files/HoduCC Brochure.pdf'   
+import Conf from '../../assets/files/HoduConf Brochure.pdf'   
+import Pbx from '../../assets/files/HoduPBX Brochure.pdf'         
 import { Container, Row, Col } from 'react-bootstrap';
 import './upper.css';
 
@@ -22,14 +27,14 @@ export default function Upper() {
                 <Col md={4} sm={6} xs={12} className="services footer-col text-nowrap   ">
                     <h2 className="head-footer">Services</h2>
                     <div className="footer-elements">
-                    <p>Web Development</p>
-                    <p>Software Development</p>
-                    <p>Business Process Re-Engineering</p>
-                    <p>IT Systems Review and security Audits</p>
-                    <p>Biometric Systems and Intergration</p>
-                    <p>Provide Business Automation</p>
-                    <p>Data Analysis and visualisation</p>
-                    <p>Oracle Technology Experts</p>
+                    <NavLink><p>Web Development</p></NavLink>
+                    <NavLink><p>Software Development</p></NavLink>
+                    <NavLink><p>Business Process Re-Engineering</p></NavLink>
+                    <NavLink><p>IT Systems Review and security Audits</p></NavLink>
+                    <NavLink><p>Biometric Systems and Intergration</p></NavLink>
+                    <NavLink><p>Provide Business Automation</p></NavLink>
+                    <NavLink><p>Data Analysis and visualisation</p></NavLink>
+                    <NavLink><p>Oracle Technology Experts</p></NavLink>
                     </div>
 
                 </Col>
@@ -37,12 +42,10 @@ export default function Upper() {
                 <Col md={2} sm={6} xs={12} className="about-us footer-col">
                     <h2 className="head-footer">About Us</h2>
                     <div className="footer-elements">
-                    <p>About Us</p>
-                    <p>Our Culture</p>
-                    <p>Our Team</p>
-                    <p>Life@Tenda</p>
-                    <p>Partners</p>
-                    <p>Careers</p>
+                    <NavLink><p>About Us</p></NavLink>
+                    <NavLink><p>Our Team</p></NavLink>
+                    <NavLink><p>Partners</p></NavLink>
+                    <NavLink><p>Careers</p></NavLink>
                     </div>
 
                 </Col>
@@ -50,11 +53,10 @@ export default function Upper() {
                 <Col md={2} sm={6} xs={12} className="resources footer-col">
                     <h2 className="head-footer">Resources</h2>
                     <div className="footer-elements">
-                    <p>Testimonials</p>
-                    <p>Infographics</p>
-                    <p>Case Studies</p>
-                    <p>Portfolio</p>
-                    <p>Tenda Blogs</p>
+                    <NavLink target="_blank" href={Blast}><p>HoduBlast</p></NavLink>
+                    <NavLink target="_blank" href={CC}><p>HoduCC</p></NavLink>
+                    <NavLink target="_blank" href={Conf}><p>HoduConf</p></NavLink>
+                    <NavLink target="_blank" href={Pbx}><p>HoduPBX</p></NavLink>
                     </div>
 
                 </Col>

@@ -1,15 +1,17 @@
 .about-section{
     background-color: white;
+    /* background-color: red; */
     /* overflow-x: hidden;  */
     font-family: 'Roboto', sans-serif;
-    height: auto;
-    /* margin: auto; */
+    height: 90vh;
     /* padding: auto; */
+    margin-top: 40px;
+    margin-bottom: 10px;
 
 
 }
 .about-wrapper{
-    width: 80%;
+    width: 90%;
 }
 
 .form-section{

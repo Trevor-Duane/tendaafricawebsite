@@ -2,9 +2,13 @@
     background-color: var(--bs-body-color);
     border-bottom-right-radius: 100px;
     font-family: 'PT Sans', sans-serif;
+    overflow: hidden;
+    height: 420px;
+    margin-top: 80px;
+    max-height: 450px;
 }
 .calousel-main2{
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 .calousel-left{
@@ -16,6 +20,7 @@
 }
 .calousel-right{
     width: 50%;
+    /* height: 400px; */
 }
 .item{
         height: 100%;
@@ -32,12 +37,14 @@
         text-align: left;       
 }
 .hero-para{
-        font-size: 1.4vw;
+        /* font-size: 1.4vw; */
+        font-size: calc(21px - 5px);
         font-family: 'PT Sans', sans-serif;
         
 }
 .hero-head{
-        font-size: 4.8vw;
+        /* font-size: 4.8vw; */
+        font-size: calc(48px - 5px);
         color: #fff;
         /* font-family: sans-serif; */
         font-family: 'PT Sans', sans-serif;
@@ -86,6 +93,7 @@
 }
 .hero-svg2{
         position: absolute;
+        opacity: .9;
         top: 25%;
         left: 43%;
 }

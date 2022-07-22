@@ -8,7 +8,7 @@ import './partner.css';
 export default function Partners() {
   return (
     <div className="partners-section" id="partners">
-        <Container className="partners-wrapper p-0">
+        <Container className="partners-wrapper">
             <Row >
                 <Col className="partners-left col-sm-12 col-xs-12">
                     <div className='trust-us'>
@@ -35,7 +35,7 @@ export default function Partners() {
 
                     </div> */}
 
-                    <div className="the-partners">
+                    <div className="the-partners d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xs-none">
                         <div className="the-real-partner">
 
                         </div>
@@ -47,9 +47,21 @@ export default function Partners() {
                         </div>
     
                     </div>
+                    <div className="the-partners-small d-block d-sm-none mb-5">
+                        <div className="the-real-partner p-2 m-2">
+
+                        </div>
+                        <div className="the-real-partner2">
+                            
+                        </div>
+                        <div className="the-real-partner1 p-2 m-2">
+                            
+                        </div>
+    
+                    </div>
                 </Col>
 
-                <Col className="partners-right d-sm-none d-md-block d-none d-sm-block">
+                <Col className="partners-right d-sm-none d-md-flex d-none d-sm-flex">
                     <div className="partner-image-wrapper img-fluid"></div>
                 </Col>
             </Row>
