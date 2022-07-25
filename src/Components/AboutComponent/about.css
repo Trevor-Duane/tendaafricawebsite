@@ -1,10 +1,8 @@
 .about-section{
     background-color: white;
-    /* background-color: red; */
-    /* overflow-x: hidden;  */
     font-family: 'Roboto', sans-serif;
     height: 90vh;
-    /* padding: auto; */
+    scroll-margin-top: 90px !important;
     margin-top: 40px;
     margin-bottom: 10px;
 
@@ -18,7 +16,6 @@
     background-color: rgba(252, 243, 226, 0.603);
     width: 100%;
     padding: 10px;
-    /* margin-bottom: 0; */
     height: 480px;
 }
 .about-tenda h6{
@@ -30,7 +27,6 @@
     text-align: left;
     font-weight: bold;
     font-family: 'PT Sans', sans-serif;
-    /* font-size: 2rem; */
 }
 .story{
     text-align: left;
@@ -49,10 +45,8 @@
     width: max-content;
     min-width: max-content;
     display: flex;
-    /* border: solid 0.01rem orange; */
     justify-content: space-around;
     align-items: center;
-    /* flex-direction: column; */
     background-color: rgba(252, 243, 226, 0.603);
     border-radius: 5px;
 
@@ -80,7 +74,6 @@
     background-color: orange !important;
     color: #ffffff;
     border: none;
-    /* padding: 2px; */
 }
 .button-in-about{
     background-color: none !important;
@@ -97,7 +90,6 @@
     font-size: 0.8rem;
     margin-left: 5px !important;
     border: none;
-    /* display: inline; */
     color: #696969;
     outline: none;
     background: none!important;

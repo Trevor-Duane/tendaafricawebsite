@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import { scroller, Link as Dlink  } from 'react-scroll';
 import logo from '../../assets/images/tenda.png';
 import './navigation.css';
 
@@ -29,6 +28,7 @@ export default function Navigationbar() {
 
                         <Nav.Item>
                             <Nav.Link className="navLink" href="/#solutions">Solutions/Products</Nav.Link>
+            
                         </Nav.Item>
 
                         <Nav.Item>
@@ -42,7 +42,7 @@ export default function Navigationbar() {
                         </Link>
 
                         <Nav.Item>
-                            <Nav.Link offset={-80} className="navLink" href="/#about-us">About Us</Nav.Link>
+                            <Nav.Link className="navLink" href="/#about-us">About Us</Nav.Link>                          
                         </Nav.Item>
 
                         <Link to="/contact" className="contact">

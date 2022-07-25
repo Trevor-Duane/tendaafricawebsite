@@ -30,14 +30,14 @@ const data = [
     },
     {
         id:5,
-        image:"./images/2.png",
+        image:"./images/pbx.png",
         title:"HoduPBX",
         description:"IP PBX Software",
         category:"Communication",
     },
     {
         id:6,
-        image:"./images/nducc.png",
+        image:"./images/2.png",
         title:"HoduCC",
         description:"Contact Center Software",
         category:"Communication",

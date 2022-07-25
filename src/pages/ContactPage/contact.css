@@ -76,7 +76,8 @@
 .reachus-left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
+    /* justify-content: center; */
     align-items: flex-start;
 }
 .reachus-left > div:first-child {

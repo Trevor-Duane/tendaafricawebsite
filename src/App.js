@@ -4,7 +4,7 @@ import Contact from './pages/ContactPage/Contact';
 import Products from './Components/ProductsComponent/Products';
 import Careers from './pages/CareersPage/Careers';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import About from './Components/AboutComponent/About';
 import Partners from './Components/PartnersComponent/Partners';
 
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />}></Route>
           <Route path="/#about-us" element={<About />}></Route>
           <Route path="/#partners" element={<Partners />}></Route>
-          <Route path="/#solutions" element={<Products />}></Route>
+          <Route path="/#solutions" element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
       

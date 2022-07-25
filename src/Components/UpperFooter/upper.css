@@ -53,13 +53,19 @@
 .footer-elements p{
     color: #f0dede;
 }
+.footer-service-link p{
+    color: #f0dede !important;
+}
+.footer-service-link p:hover{
+    color: #7a7a7a !important;
+}
 .services{
     line-height: 10px;
     margin-top: 3em;
     text-align: left;
     color: #f0dede;
 }
-.about-us{
+.about-uss{
     line-height: 12px;
     text-align: left;
     color: #f0dede;

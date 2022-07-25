@@ -27,25 +27,25 @@ export default function Upper() {
                 <Col md={4} sm={6} xs={12} className="services footer-col text-nowrap   ">
                     <h2 className="head-footer">Services</h2>
                     <div className="footer-elements">
-                    <NavLink><p>Web Development</p></NavLink>
-                    <NavLink><p>Software Development</p></NavLink>
-                    <NavLink><p>Business Process Re-Engineering</p></NavLink>
-                    <NavLink><p>IT Systems Review and security Audits</p></NavLink>
-                    <NavLink><p>Biometric Systems and Intergration</p></NavLink>
-                    <NavLink><p>Provide Business Automation</p></NavLink>
-                    <NavLink><p>Data Analysis and visualisation</p></NavLink>
-                    <NavLink><p>Oracle Technology Experts</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/services"><p>Web Development</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/services"><p>Software Development</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/services"><p>Business Process Re-Engineering</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/services"><p>IT Systems Review and security Audits</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/services"><p>Biometric Systems and Intergration</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/services"><p>Provide Business Automation</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/services"><p>Data Analysis and visualisation</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/services"><p>Oracle Technology Experts</p></NavLink>
                     </div>
 
                 </Col>
 
-                <Col md={2} sm={6} xs={12} className="about-us footer-col">
+                <Col md={2} sm={6} xs={12} className="about-uss footer-col">
                     <h2 className="head-footer">About Us</h2>
                     <div className="footer-elements">
-                    <NavLink><p>About Us</p></NavLink>
-                    <NavLink><p>Our Team</p></NavLink>
-                    <NavLink><p>Partners</p></NavLink>
-                    <NavLink><p>Careers</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="#about-us"><p>About Us</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/contact"><p>Our Team</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="#partners"><p>Partners</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" href="/careers"><p>Careers</p></NavLink>
                     </div>
 
                 </Col>
@@ -53,10 +53,10 @@ export default function Upper() {
                 <Col md={2} sm={6} xs={12} className="resources footer-col">
                     <h2 className="head-footer">Resources</h2>
                     <div className="footer-elements">
-                    <NavLink target="_blank" href={Blast}><p>HoduBlast</p></NavLink>
-                    <NavLink target="_blank" href={CC}><p>HoduCC</p></NavLink>
-                    <NavLink target="_blank" href={Conf}><p>HoduConf</p></NavLink>
-                    <NavLink target="_blank" href={Pbx}><p>HoduPBX</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" target="_blank" href={Blast}><p>HoduBlast</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" target="_blank" href={CC}><p>HoduCC</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" target="_blank" href={Conf}><p>HoduConf</p></NavLink>
+                    <NavLink className="nav-item footer-service-link" target="_blank" href={Pbx}><p>HoduPBX</p></NavLink>
                     </div>
 
                 </Col>

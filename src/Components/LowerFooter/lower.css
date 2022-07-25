@@ -25,12 +25,17 @@
     color: #ffffff;
     
 }
+.social > .icons:hover{
+    padding: auto;
+    color: orange;
+    
+}
 .policies a{
     padding: 10px;
     text-decoration: none;
     color: #ffffff;
     font-weight: lighter;
-    font-size: 1.1vw;
+    font-size: 1vw;
     
 }
 .policies a:hover{
