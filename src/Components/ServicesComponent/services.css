@@ -56,8 +56,9 @@
  .grid1{
      background-color: #ffffff;
      margin-top: 2em;
-     background-image: url("../../assets/images/ideation.png");
+     background-image: url("../../assets/images/ideation2.png");
      background-size: contain;
+     background-position: center;
      background-repeat: no-repeat;
      border-radius: 5px;
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -103,7 +104,8 @@
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
      background-size: contain;
      background-repeat: no-repeat;
-     background-image: url("../../assets/images/webdev.png");
+     background-position: center;
+     background-image: url("../../assets/images/webdev2.png");
 
  }
  .service-overlay{
@@ -122,10 +124,11 @@
      border-radius: 5px;
      /* border: solid .5px #000; */
      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+/* background-color: aqua; */
      background-size: contain;
      background-repeat: no-repeat;
-     background-image: url("../../assets/images/pdesign.png");
+     background-position: center;
+     background-image: url("../../assets/images/pdesign2.png");
  }
  .grid4{
     background-color: #ffffff;
@@ -134,8 +137,9 @@
     /* border: solid .5px #000; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-size: contain;
+     background-position: center;
      background-repeat: no-repeat;
-     background-image: url("../../assets/images/mdev.png");
+     background-image: url("../../assets/images/mdev2.png");
 }
 .grid5{
     background-color: #ffffff;
@@ -144,8 +148,9 @@
     /* border: solid .5px #000; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/images/visual.png");
+     background-position: center;
+     background-repeat: no-repeat;
+    background-image: url("../../assets/images/visual2.png");
 
 }
 .grid6{
@@ -155,8 +160,9 @@
     /* border: solid .5px #000; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/images/dtrans.png");
+     background-position: center;
+     background-repeat: no-repeat;
+    background-image: url("../../assets/images/dtrans2.png");
 
 }
 .grid-service{
@@ -174,4 +180,7 @@
 }
 .h6grid h6:hover{
     color: black;
+}
+.ServicesgridLinks{
+    text-decoration: none;
 }

@@ -10,6 +10,7 @@ import webdev from '../../assets/images/webdev.png';
 import visual from '../../assets/images/visual.png';
 import mdev from '../../assets/images/mdev.png';
 import './servicespages.css';
+import './seperate.css';
 
 export default function ServicesPage() {
 
@@ -35,30 +36,42 @@ export default function ServicesPage() {
             </div>
           </div>
     </section>
-    <section className="container-fluid service-nav-main sticky-top">
-      <Container className="services-nav navbar sticky-top">
-        <Nav sticky="top" className="justify-content-center" activeKey="#ideation-section" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
-          <Nav.Item className="service-item">
-            <Nav.Link className="service-link" href="#ideation-section">Ideation</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="service-item">
-            <Nav.Link className="service-link" eventKey="link-1">Product Design</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="service-item">
-            <Nav.Link className="service-link" eventKey="link-2">Web Development</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="service-item">
-            <Nav.Link className="service-link" eventKey="link-3" >Mobile Development</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="service-item">
-            <Nav.Link className="service-link" eventKey="link-5" >Digital Transformation</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="service-item">
-            <Nav.Link className="service-link" eventKey="link-4" >Oracle Technologies</Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Container>
-    </section>
+    <Nav className="container-fluid service-nav-main sticky-top">
+        <Container className="services-nav sticky-top" >
+          <Row>
+            <Col>
+              <Nav.Item className="service-item">
+                <Nav.Link className="service-link" href="#ideation-section">Ideation</Nav.Link>
+              </Nav.Item>
+            </Col>
+            <Col>
+              <Nav.Item className="service-item">
+                <Nav.Link className="service-link" href="#pdesign-section">Product Design</Nav.Link>
+              </Nav.Item>
+            </Col>
+            <Col>
+              <Nav.Item className="service-item">
+                <Nav.Link className="service-link" href="#web-section">Web Development</Nav.Link>
+              </Nav.Item>
+            </Col>
+            <Col>
+              <Nav.Item className="service-item">
+                <Nav.Link className="service-link" href="#mobile-section" >Mobile Development</Nav.Link>
+              </Nav.Item>
+            </Col>
+            <Col>
+              <Nav.Item className="service-item">
+                <Nav.Link className="service-link" href="#ml-section">Digital Transformation</Nav.Link>
+              </Nav.Item>
+            </Col>
+            <Col>
+              <Nav.Item className="service-item">
+                <Nav.Link className="service-link" href="#oracle-section" >Oracle Technologies</Nav.Link>
+              </Nav.Item>
+            </Col>
+          </Row>
+        </Container>      
+    </Nav>
     <section className="service-intro-section">
       <Container>
         <Row>

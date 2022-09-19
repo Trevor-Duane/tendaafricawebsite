@@ -6,17 +6,26 @@ import Services from '../../Components/ServicesComponent/Services';
 import Partners from '../../Components/PartnersComponent/Partners';
 import Products from '../../Components/ProductsComponent/Products';
 import Footer from '../../Components/FooterComponent/Footer';
-// import Events from '../../Components/EventsComponent/Events';
 import Map from '../../Components/MapComponent/Map';
 import Testimonial from '../../Components/TestimonialComponent/Testimonial';
+import Sidebar from '../../Components/SidebarComponent/Sidebar';
+import './home.css';
+import Slider from '../../Components/Carousel/Slider';
 
 export default function Home() {
   return (
     <div>
         <Navigationbar />
-        <Calousel /> 
-        <About />
-        <Services />
+        <Slider/>
+        <div className="homeContent">
+          <div className="lefthomeContent">
+            <About />
+            <Services />
+          </div>
+          <div className="righthomeContent">
+            <Sidebar/> 
+          </div>
+        </div>
         <Partners />
         <Products />
         <Testimonial />

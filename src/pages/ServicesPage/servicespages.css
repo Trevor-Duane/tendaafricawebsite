@@ -2,7 +2,7 @@
     background-image: url("../../assets/images/s3.jpg");  
     background-attachment: fixed;
     background-size: cover;
-    height: 60vh;
+    /* height: 60vh; */
     margin-top: 80px;   
     font-family: 'PT Sans', sans-serif;
 
@@ -51,6 +51,7 @@
 }
 .service-nav-main{
     background-color: #fff;
+    margin-top: 5px;
 }
 .services-nav{
     width: 80%;
@@ -59,15 +60,23 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    /* border-bottom: solid 1px #7a7a7a; */
 }
 .service-link{
     color: #505050;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-bottom: solid 1px #7a7a7a;
+
 }
 .service-link.active{
     color: maroon;
 }
 .service-link:hover{
     color: orange;
+    box-shadow: none;
+    white-space: nowrap;
 }
 .service-desc-head{
     width: 70%;
@@ -76,7 +85,7 @@
     color: maroon;
 }
 .service-intro-section{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .service-intro-section  h4{
     width: 55%;
@@ -109,4 +118,14 @@
 .talk2us-service-button:hover{
     background-color: #cc5500;
     border: none;
+}
+#ideation-section, #pdesign-section, #web-section, #ml-section, #mobile-section, #oracle-section{
+    scroll-margin-top: 100px;
+}
+#ml-section{
+    scroll-margin-top: 14rem;
+}
+#oracle-section{
+    scroll-margin-top: 14rem;
+
 }

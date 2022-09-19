@@ -1,0 +1,58 @@
+.curatorContainer{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    display: inline-block;
+    /* height: 300px; */
+    padding: 5px;
+    margin: 3rem;
+}
+.curatorWrapper{
+    width: 800px;
+    padding: 10px;
+    height: auto;
+    /* background-color: bisque; */
+}
+.curated-by{
+    text-transform: uppercase;
+    color: #717171;
+    font-weight: 500;
+    font-size: .8rem;
+}
+.curator-name{
+    border-bottom: solid maroon 2px;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.curator-name:hover{
+    color: maroon;
+    cursor: pointer;
+}
+.curator-hero{
+    display: inline-block;
+    position: relative;
+}
+.curator-photo{
+    width: 100%;
+    height: 15vw;
+    margin-top: 3.5rem;
+    position: relative;
+    border-radius: 5px;
+}
+.curator-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+/* .curator-role{
+    display: inline-block;
+    
+    font-size: 1rem;
+    word-break: break-all;
+    max-width: 300px;
+} */
+.social-links{
+    margin-top: 5rem;
+}
+.curatorSocialIcons{
+    margin: 5px;
+}

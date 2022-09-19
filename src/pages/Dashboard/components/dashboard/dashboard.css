@@ -1,0 +1,23 @@
+.navWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userName{
+    color: white;
+    margin-right: 5px;
+}
+.bloguserName{
+    text-transform: lowercase;
+}
+.profileP{
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    height: 50px;
+}

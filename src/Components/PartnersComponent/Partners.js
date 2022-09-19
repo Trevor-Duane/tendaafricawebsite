@@ -21,7 +21,7 @@ export default function Partners() {
 
                     <div className="why-trust">
                         <p>
-                            TENDA builds so ware that lets people do things differently.
+                            TENDA builds software that lets people do things differently.
                             share your challenge with out team and we'll work with you
                             to deliver a revolutionary product
                         </p>

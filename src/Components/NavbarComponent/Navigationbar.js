@@ -27,7 +27,7 @@ export default function Navigationbar() {
                         </Link>
 
                         <Nav.Item>
-                            <Nav.Link className="navLink" href="/#solutions">Solutions/Products</Nav.Link>
+                            <Nav.Link className="navLink" href="/#solutions">Our Products</Nav.Link>
             
                         </Nav.Item>
 
@@ -45,6 +45,12 @@ export default function Navigationbar() {
                             <Nav.Link className="navLink" href="/#about-us">About Us</Nav.Link>                          
                         </Nav.Item>
 
+                        <Link to="/blog" className="blog">
+                            <Nav.Item>
+                                <Nav.Link className="navLink"  href="/blog">Blog</Nav.Link>
+                            </Nav.Item>
+                        </Link>
+                        
                         <Link to="/contact" className="contact">
                             <Nav.Item>
                                 <Nav.Link className="navLink"  href="/contact">Contact Us</Nav.Link>

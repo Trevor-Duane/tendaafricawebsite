@@ -17,7 +17,7 @@ const USER_ID = "Xd5tpxIrR_xFrbAC4";
 
 
 export default function Contact() {
-  let iconstyles ={ color:"#cc5500", fontSize:"1.2em"}
+  let iconstyles ={ color:"maroon", fontSize:"1.2em"}
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
@@ -76,8 +76,9 @@ export default function Contact() {
           </div>
           <div className="reachus-text">
             <h6>Phone Number</h6>
-            <p>+256 781 812 502</p>
-            <p>+256 709 005 770</p>
+            <p className="contact1">+256 702 466 112</p>
+            <p className="contact2">+256 781 812 502</p>
+            <p className="contact3">+256 709 005 770</p>
           </div>
         </div>
         <div className="reachus-box">

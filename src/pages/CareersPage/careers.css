@@ -21,7 +21,10 @@
     color: #cc5500;
     text-decoration: none;
  }
- 
+ .crumb-link-jobsingle{
+    padding: 10px;
+    margin-left: 125px;
+ }
 .crumb-link{
     padding: 10px;
     margin-left: 125px;
@@ -84,12 +87,18 @@
 .perks-section-wrapper{
     width: 80%;
 }
-.perks-head{
+.perks-head h2{
     margin-top: 2em;
     color: maroon;
 }
+.col-perks-para{
+    width: 100%;
+}
 .perks-para{
     margin-top: 2em;
+    width: 100%;
+    position: relative;
+
 }
 .perks-para ul{
     list-style: none;
@@ -97,6 +106,7 @@
 }
 .perks-para ul li{
     font-size: 16px;
+    line-height: 30px;
 }
 .perks-para ul li::before{
     content: '';

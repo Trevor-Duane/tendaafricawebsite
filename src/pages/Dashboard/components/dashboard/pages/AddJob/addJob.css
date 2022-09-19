@@ -1,0 +1,40 @@
+.addJobWrapperMain{
+    background-color: #fff;
+}
+.addJobWrapper{
+    margin-top:20px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+.addjobForm label{
+    font-size: 24px;
+    margin: 20px 20px 20px 0px
+}
+.addjobForm input{
+    font-size: 12px;
+}
+.addJobButton{
+    outline: none;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    width: 150px;
+    align-self: flex-start;
+    font-size: 18px;
+    background-color: black;
+    border-radius: 6px;
+    padding: 5px
+}
+.addJobButton:hover{
+    color: bisque;
+    
+}
+.reactQuillContainer{
+    margin-bottom: 10px;
+    max-height: 400px;
+}
+   

@@ -13,13 +13,13 @@ import thouse from '../../assets/images/thouse.jpg';
 
 export default function About() {
   return (
-    <div className="about-section" id="about-us">
+    <div className="about-section container" id="about-us">
       <Container className="about-wrapper d-sm-none d-md-block d-none d-sm-block">
         <Tab.Container className="sameh" id="left-tabs-example" defaultActiveKey="first">
           <Row>
             <Col sm={12} md={6} lg={6} className="samehh-2 p-0 m-0">
             <div className="about-tenda">
-                        <h6>All About Us</h6>
+                        <h6>About Us</h6>
                       </div>
 
                       <div className='our-story'>
@@ -54,26 +54,26 @@ export default function About() {
                         </p>
                       </div>
               <Nav variant="pills" className="flex-row tenda" >
-                <Nav.Item className="m-1 tenda-box" sm="12">
+                <Nav.Item className="mx-1 tenda-box" sm="12">
                   <BsFillChatTextFill size={28} color="Orange"/>
                   <Nav.Link eventKey="first" className="our">Talk to us</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="m-1 tenda-box" sm="12">
+                <Nav.Item className="tenda-box" sm="12">
                   <FaEye size={28} color="Orange"/>
                   <Nav.Link eventKey="second" className="our">Our Vision</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="m-1 tenda-box" sm="12">
+                <Nav.Item className=" mx-1 tenda-box" sm="12">
                   <BsBullseye size={28} color="Orange"/>
                   <Nav.Link eventKey="third" className="our">Our Mission</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="m-1 tenda-box" sm="12">
+                <Nav.Item className="tenda-box" sm="12">
                   <BsWind size={28} color="Orange"/>
                   <Nav.Link eventKey="fourth" className="our">Key Success</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>
 
-            <Col sm={12} md={6} lg={6} className="samehh-1">
+            <Col sm={12} md={6} lg={6} className="samehh-1 p-0 m-0">
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                 <div className="form-section">

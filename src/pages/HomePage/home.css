@@ -1,0 +1,10 @@
+.homeContent{
+    display: flex;
+}
+.lefthomeContent{
+    flex: 7;
+}
+.righthomeContent{
+    flex: 2;
+    box-shadow: rgba(60, 64, 67, 0.5) 1px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 0px;
+}

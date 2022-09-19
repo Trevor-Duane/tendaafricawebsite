@@ -1,21 +1,22 @@
 import React from 'react';
-import { Row, Col, Carousel, Container, Button, Image } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
+import { Row, Col, Container, Button, Image } from 'react-bootstrap';
 import scrible  from '../../assets/icons/scribbled.png';
 import hero from '../../assets/images/hero1.jpg';
 import hero2 from '../../assets/images/hero2.jpg';
 import hero3 from '../../assets/images/hero3.jpg';
 import hero4 from '../../assets/images/hero4.jpg';
 import bg from '../../assets/images/bg.png';
-import './calousel.css';
+// import './calousel.css';
 import { Link } from 'react-router-dom';
 
 export default function Calousel() {
   return (
     <div className="calousel-main">
         <Container className="calousel-main2 p-0 my-0">
-            <Carousel indicators={false} controls={false} interval={5000} className="carousel-inner">
+            <Carousel indicators={false} controls={false} slide={false} className="carousel-inner">
 
-            <Carousel.Item className="item m-0 p-0" interval={2000}>
+            <Carousel.Item className="item m-0 p-0" interval={3000}>
                 <Row className="calousel-wrapper p-0 m-0">
                     <Col className="calousel-left">
                         <div className="text-buttons">
@@ -63,7 +64,7 @@ export default function Calousel() {
                 </Row>
             </Carousel.Item>
 
-            <Carousel.Item className="item m-0 p-0" interval={2000}>
+            <Carousel.Item className="item m-0 p-0" interval={3000}>
                 <Row className="calousel-wrapper m-0 p-0">
                     <Col className="calousel-left">
                         <div className="text-buttons">
@@ -112,7 +113,7 @@ export default function Calousel() {
                 </Row>
             </Carousel.Item>
 
-            <Carousel.Item className="item m-0 p-0" interval={2000}>
+            <Carousel.Item className="item m-0 p-0" interval={3000}>
                 <Row className="calousel-wrapper m-0 p-0">
                     <Col className="calousel-left">
                         <div className="text-buttons">

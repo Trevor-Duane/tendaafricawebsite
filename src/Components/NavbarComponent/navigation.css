@@ -10,6 +10,7 @@
     color: #C0C0C0 !important;
     padding: 15px !important;
     font-size: 15px;
+    font-weight: bold;
     text-decoration: none !important;
     font-family: 'Roboto', sans-serif;
 }
@@ -38,6 +39,6 @@
 .navbutton-link{
     text-decoration: none;
 }
-.contact, .careers, .services, .partners{
+.contact, .careers, .services, .partners, .blog{
     text-decoration: none !important;
 }

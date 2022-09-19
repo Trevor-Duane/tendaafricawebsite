@@ -1,0 +1,55 @@
+.addPostWrapper{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: stretch;
+    width: 80%;
+    justify-content: center;
+}
+.imagePreview{
+    width: 100%;
+}
+.addPostSelects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addPostWrapper label{
+    font-size: 18px;
+    margin: 5px;
+}
+.addPostWrapper input{
+    font-size: 12px;
+}
+.addPostWrapper select{
+    margin-left: 5px;
+    padding: 5px;
+}
+.publishButton{
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background-color: black;
+    border-radius: 6px;
+    padding: 5px
+}
+.addpostselectOption{
+    font-size: 18px;
+}
+.disabledValue{
+    color: grey !important;
+    background-color: white !important;
+    
+}
+.disabledValue:hover{
+    color: grey;
+    background-color: white;
+    
+}
+.disabledValue .active{
+    color: grey;
+    background-color: white;
+    
+}

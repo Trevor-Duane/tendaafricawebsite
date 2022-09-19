@@ -6,18 +6,44 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     justify-content: space-between;
     align-items: stretch;
+    flex-direction: column;
     padding: 5px;
     border-radius: 5px;
 }
 .job-details-card{
-    margin-left: 5px;
+    margin-left: 0px;
+}
+.jobDates{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #ddd;
+
+}
+.jobOpenDate, .jobCloseDate{
+    margin-right: 5px;
+    font-weight: bold;
+}
+.job-close-date, .job-open-date{
+    padding-bottom: -10px;
+}
+.job-title{
+    font-weight: bold;
+    font-size: 20px;
 }
 .job-button{
     background-color: maroon;
     outline: none;
+    font-size: 12px;
     border: solid 2px maroon;
 }
 .job-button:hover{
-    background-color: #ec9706;
+    background-color: #000;
+    color: #fff;
     border: none;
+}
+.job-button:focus, .job-button:active{
+    outline: none;
+    box-shadow: none;
 }
