@@ -1,11 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import swal from 'sweetalert';
-import { useLocation, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import ReactQuill from 'react-quill';
 import { Container } from 'react-bootstrap';
 import DashNav from '../../components/DashNav/DashNav';
 import './editPost.css';
+
+
+
+axios.defaults.withCredentials = true;
+
 
 const  modules  = {
     toolbar: [
@@ -28,6 +33,8 @@ const  modules  = {
 
 const EditPost = () => {
     const postId = useParams().id;
+    const navigate = useNavigate();
+    const token = JSON.parse(localStorage.getItem('token'));
     // console.log(postId)
 
     const [title, setTitle] = useState("");
@@ -40,15 +47,15 @@ const EditPost = () => {
 
 useEffect(() => {
     const getPostById = async () => {
-        await axios.get(`http://localhost:5000/post/${postId}`).then(response => {
-          console.log(response);
-          setTitle(response.data.post.title);
-          setBody(response.data.post.body);
-          setUser_id(response.data.post.user_id);
-          setCategory_id(response.data.post.category_id);
-          setAuthor(response.data.post.author)
-          setImage(response.data.post.image);
-          setPstatus(response.data.post.pstatus)
+        await axios.get(`http://backend.tendaafrica.com/public/api/posts/${postId}`).then(response => {
+          console.log("post fetch data", response);
+          setTitle(response.data.title);
+          setBody(response.data.body);
+          setUser_id(response.data.user_id);
+          setCategory_id(response.data.category_id);
+          setAuthor(response.data.author)
+          setImage(response.data.image);
+          setPstatus(response.data.pstatus)
         })
     }
     getPostById();
@@ -56,7 +63,13 @@ useEffect(() => {
 
 const updatePost = async (e) => {
   e.preventDefault();  
-  await axios.patch(`http://localhost:5000/post/${postId}`,{
+
+  const headers = {
+    accept: "application/json",
+    Authorization: `Bearer +${token}`
+    
+}
+  await axios.put(`http://backend.tendaafrica.com/public/api/posts/${postId}`,{
       title: title,
       body: body,
       user_id: user_id,
@@ -64,7 +77,7 @@ const updatePost = async (e) => {
       author: author,
       image: image,
       pstatus: pstatus
-  });
+  },{headers: headers},);
   swal({
     title: "Success",
     text: "Post has been edited",
@@ -75,6 +88,7 @@ const updatePost = async (e) => {
     confirmButtonText: "Close this",
     allowOutsideClick: false
   });
+  navigate('/userposts')
 }
 
     return (

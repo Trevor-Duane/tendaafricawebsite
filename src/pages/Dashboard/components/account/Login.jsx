@@ -9,35 +9,46 @@ import { useNavigate, Link } from 'react-router-dom';
 
 function Login() {
   const navigate = useNavigate();
+  const errRef = useRef(null);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const [errorMsg, setErrorMsg] = useState("");
 
   const [loggedin, setLoggedin] = useState("");
 
   axios.defaults.withCredentials = true;
 
-
-  const login = async () =>{
-    axios.post("http://localhost:5000/login", {
-      email: email,
-      password: password
-    }).then((response) => {
-      console.log(response)
-      localStorage.setItem('blogUser', JSON.stringify(response.data[1].existingUser))
-      if(response.data[0].message === "Login Successful"){
-        console.log(response.data[0].message)
-        navigate("/dashboard")
-        setLoggedin(response.data.email);
-        console.log(loggedin)
-
-
-      }else{
-        navigate("/login")
-        setLoggedin(false);
-      }
-    }).catch((error) => {
-      console.log(error);
+  const login = async () => {
+     await axios.get('http://backend.tendaafrica.com/public/sanctum/csrf-cookie').then((r) => {
+      axios.post('http://backend.tendaafrica.com/public/api/login',{
+        email: email,
+        password: password
+      }).then((response) => {
+          console.log(response.data)
+          localStorage.setItem('token', JSON.stringify(response.data.token))
+          localStorage.setItem('blogUser', JSON.stringify(response.data.user))
+          if(response.status === 201){
+            navigate("/dashboard")
+          }
+      
+      }).catch((error) => {
+        if(error.response){
+          // console.log(error.response.data);
+          // console.log(error.response.status);
+          // console.log(error.response.headers);
+          setErrorMsg(error.response.data.message)
+          setEmail("")
+          setPassword("")
+        }else if(error.request){
+          // console.log(error.request);
+        }else{
+          // console.log('Error', error.message);
+          
+        }
+        // console.log(error.config);
+      })
     })
   }
 
@@ -46,35 +57,12 @@ function Login() {
     // console.log({email, password});
   }
 
-  // const login = () => {
-  //   axios.post("http://localhost:5000/login", {
-  //     email: email,
-  //     password: password,
-  //   }).then((response) => {
-  //     if (response.data.message) {
-  //       console.log(response.data.message);
-  //       setLoginStatus(response.data.message);
-  //     } else {
-  //       setLoginStatus(response.data[0].email);
-  //     }
-  //     console.log('navigate from here');
-  //     navigate('/dashboard');     
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   axios.get("http://localhost:5050/loginCheck").then((response) => {
-  //     if (response.data.loggedIn === true) {
-  //       setLoginStatus(response.data.user[0].username);
-  //     }
-  //   });
-  // }, []);
 
   return (
     <div className="loginWrapper">
       <div className="loginBox">
         <div className="formHead">
-          {/* <p ref={errRef} className="" aria-live="assertive">{errorMsg}</p> */}
+          <p ref={errRef} className="errorRef" aria-live="assertive">{errorMsg}</p>
           <h4>Blog Admin Login</h4>
         </div>
         <hr></hr>
@@ -112,13 +100,13 @@ function Login() {
           </Button>
         </div>
       </Form>
-      <p className="formFoot">
+      {/* <p className="formFoot">
         Need an Account?&nbsp;
         <span className="line">
           <Link className="loginformLink" to="/register">Signup</Link>
         </span>
 
-      </p>
+      </p> */}
       </div>
     </div>
   )

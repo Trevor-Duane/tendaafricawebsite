@@ -37,12 +37,12 @@ function BlogPage() {
                     </div>
                         <ListGroup variant="flush" >
                         <ListGroup.Item action href="#technology">Technology</ListGroup.Item>
-                        <ListGroup.Item action href="#link2">Events</ListGroup.Item>
-                        <ListGroup.Item action href="#link3">Products</ListGroup.Item>
-                        <ListGroup.Item action href="#link4">Stories</ListGroup.Item>
-                        <ListGroup.Item action href="#link5">News</ListGroup.Item>
-                        <ListGroup.Item action href="#link6">Tutorials</ListGroup.Item>
-                        <ListGroup.Item action href="#link7">Business</ListGroup.Item>
+                        <ListGroup.Item action href="#business">Business</ListGroup.Item>
+                        <ListGroup.Item action href="#events">Events</ListGroup.Item>
+                        <ListGroup.Item action href="#products">Products</ListGroup.Item>
+                        {/* <ListGroup.Item action href="#link4">Stories</ListGroup.Item> */}
+                        {/* <ListGroup.Item action href="#link5">News</ListGroup.Item> */}
+                        {/* <ListGroup.Item action href="#link6">Tutorials</ListGroup.Item> */}
                         </ListGroup>
                     </div>
                 </Col>
@@ -60,7 +60,7 @@ function BlogPage() {
                         <TechnologyBlogList/>
                     </Tab.Pane>
                     
-                    <Tab.Pane className="tab-pane" eventKey="#link2">
+                    <Tab.Pane className="tab-pane" eventKey="#events">
                         <div className="right-1">
                             <p className="start-line">Learn more about </p>
                             <h1 className="blogCategoryTitle">
@@ -71,7 +71,7 @@ function BlogPage() {
                         <Curator/>
 
                     </Tab.Pane>
-                    <Tab.Pane className="tab-pane" eventKey="#link3">
+                    <Tab.Pane className="tab-pane" eventKey="#products">
                         <div className="right-1">
                             <p className="start-line">Learn more about </p>
                             <h1 className="blogCategoryTitle">
@@ -83,7 +83,7 @@ function BlogPage() {
 
                         
                     </Tab.Pane>
-                    <Tab.Pane className="tab-pane" eventKey="#link4">
+                    {/* <Tab.Pane className="tab-pane" eventKey="#stories">
                         <div className="right-1">
                             <p className="start-line">Learn more about </p>
                             <h1 className="blogCategoryTitle">
@@ -93,8 +93,8 @@ function BlogPage() {
                         </div>
                         <Curator/>
 
-                    </Tab.Pane>
-                    <Tab.Pane className="tab-pane" eventKey="#link5">
+                    </Tab.Pane> */}
+                    {/* <Tab.Pane className="tab-pane" eventKey="#news">
                         <div className="right-1">
                             <p className="start-line">Learn more about </p>
                             <h1 className="blogCategoryTitle">
@@ -104,8 +104,8 @@ function BlogPage() {
                         </div>
                         <Curator/>
 
-                    </Tab.Pane>
-                    <Tab.Pane className="tab-pane" eventKey="#link6">
+                    </Tab.Pane> */}
+                    {/* <Tab.Pane className="tab-pane" eventKey="#tutorials">
                         <div className="right-1">
                             <p className="start-line">Learn more about </p>
                             <h1 className="blogCategoryTitle">
@@ -115,8 +115,8 @@ function BlogPage() {
                         </div>
                         <Curator/>
 
-                    </Tab.Pane>
-                    <Tab.Pane className="tab-pane" eventKey="#link7">
+                    </Tab.Pane> */}
+                    <Tab.Pane className="tab-pane" eventKey="#business">
                         <div className="right-1">
                             <p className="start-line">Learn more about </p>
                             <h1 className="blogCategoryTitle">

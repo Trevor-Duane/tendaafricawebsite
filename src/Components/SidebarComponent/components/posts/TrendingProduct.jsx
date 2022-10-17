@@ -8,7 +8,7 @@ function TrendingProduct() {
 
   useEffect(() => {
       async function loadProducts(){
-          axios.get("http://tendawebsite.com/wp-json/wp/v2/tendaproducts")
+          axios.get("http://backend.tendaafrica.com/public/api/posts")
           .then(res => {
               console.log("These are products from the data database", res.data)
               const homePostsProducts = res.data

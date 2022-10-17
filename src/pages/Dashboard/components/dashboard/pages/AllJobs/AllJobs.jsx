@@ -7,15 +7,19 @@ import {MdDeleteOutline} from 'react-icons/md';
 import DashNav from '../../components/DashNav/DashNav';
 import './allJobs.css';
 
+axios.defaults.withCredentials = true;
+
+
 export default function AllJobs() {
   const [jobs, setJobs] = useState([]);
+  const token = JSON.parse(localStorage.getItem('token'));
 
     useEffect(() => {
         getJobs();
     }, []);
 
-    const getJobs = async () => {
-        const response = await axios.get('http://localhost:5000/jobs');
+    const getJobs = async () => {     
+        const response = await axios.get('http://backend.tendaafrica.com/public/api/jobs');
         console.log("all jobs dash", response.data)
         const allJobs = response.data
         setJobs(allJobs);
@@ -23,7 +27,12 @@ export default function AllJobs() {
         
     }
     const deleteProduct = async (id) => {
-      await axios.delete(`http://localhost:5000/job/${id}`);
+      const headers = {
+        accept: "application/json",
+        Authorization: `Bearer +${token}`
+        
+    }
+      await axios.delete(`http://backend.tendaafrica.com/public/api/jobs/${id}`,{headers: headers});
       getJobs();
   }
 
@@ -31,7 +40,7 @@ export default function AllJobs() {
     <>
         <DashNav/>
 
-        <Container fuild className="userPostsWrapper">
+        <Container fluid className="userPostsWrapper">
           <Container className="userPostsContainer">
            {jobs.map((job, index) => (
              <Row key={job.id}>
@@ -74,9 +83,7 @@ export default function AllJobs() {
                       </div>
                     </div>
                    <div className="postTextBody">
-                     <p className="bodyText">
-                       {job.body}
-                     </p>
+                     <p className="bodyText" dangerouslySetInnerHTML={{__html: job.body }}></p>
                    </div>
                  </div>
                </div>

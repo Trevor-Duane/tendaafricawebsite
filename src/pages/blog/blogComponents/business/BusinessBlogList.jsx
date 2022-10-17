@@ -15,14 +15,20 @@ function BusinessBlogList() {
     }, []);
 
     const getPosts = async () => {
-        const response = await axios.get('http://localhost:5000/posts');
-        console.log(response.data)
+        const response = await axios.get('http://backend.tendaafrica.com/public/api/posts',
+        {
+            headers:{
+                'accept': 'application/json',
+                'content-type': 'application/json'
+            }
+        });
+        // console.log(response.data)
         const allPosts = response.data
-        const tPosts = allPosts.filter(allPost => {
-            return allPost.category_id === 2;
+        const bPosts = allPosts.filter(allPost => {
+            return allPost.category_id === "2";
         })
-        console.log(tPosts);
-        setPosts(tPosts);
+        // console.log(bPosts);
+        setPosts(bPosts);
 
         
     }

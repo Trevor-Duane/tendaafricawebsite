@@ -20,7 +20,7 @@ function Curator() {
             </div>
         </Col>
         <Col sm={5} xs={12} className="curator-hero p-0 m-0 g-0">
-            <img className="curator-photo img-fluid" src={CuratorImg} alt="person"/>
+            <img className="curator-photo img-fluid" src="http://tendaafrica.com/tendawebsite_images/curator.JPG" alt="person"/>
         </Col>
     </Row>
     </Container>

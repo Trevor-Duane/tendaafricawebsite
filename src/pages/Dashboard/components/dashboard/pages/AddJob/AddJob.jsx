@@ -6,6 +6,9 @@ import { Container } from 'react-bootstrap';
 import DashNav from '../../components/DashNav/DashNav';
 import './addJob.css';
 
+axios.defaults.withCredentials = true;
+
+
 const  modules  = {
   toolbar: [
       [{ font: [] }],
@@ -21,8 +24,9 @@ const  modules  = {
   ],
 };
 
+const token = JSON.parse(localStorage.getItem('token'));
 const blogUser = JSON.parse(localStorage.getItem('blogUser'));
-console.log(blogUser);
+// console.log(blogUser);
 
 export default function AddJob() {
   const[title, setTitle] = useState("");
@@ -31,14 +35,25 @@ export default function AddJob() {
   const [username, setUsername] = useState("");
 
   const addJob = async (e) => {
-    e.preventDefault();  
+    e.preventDefault();
+
+    const headers = {
+      accept: "application/json",
+      Authorization: `Bearer +${token}`
+      
+  }
     setUser_id(blogUser.id);
     setUsername(blogUser.username);
-    await axios.post("http://localhost:5000/job",{
+    
+    await axios.post("http://backend.tendaafrica.com/public/api/jobs", {
       title: title,
       body: body,
       user_id: user_id,
       username: username,
+    },
+    {
+      headers: headers
+
     }).then(response => {
       console.log(response);
       

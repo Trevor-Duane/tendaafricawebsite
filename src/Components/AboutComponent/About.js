@@ -90,24 +90,26 @@ export default function About() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second" className="short">
                   <div className="not-this">
-                    <Image className="pane-image img-thumbnail" src={vision} alt="mission"/>
-                    <h5 className="mt-5">Our Vision</h5>
+                  <h5 className="mt-5 about-tab-heads">Our Vision</h5>
                     <p className="mt-2 now-this">Tenda’s vision is to be the leading Enterprise ICT Services Provider in the region.</p>
+                    <Image className="pane-image img-thumbnail" src={vision} alt="mission"/>
+                    
                   </div>
                   
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   <div className="not-this">
-                    <Image className="pane-image img-thumbnail" src={mision} alt="mission"/>
-                    <h5 className="mt-5">Our Mission</h5>
+                    <h5 className="mt-5 about-tab-heads">Our Mission</h5>
                     <p className="mt-2 now-this">To help organizations automate their business processes in order to achieve efficiency, resource optimization and profitability.</p>
+                    <Image className="pane-image img-thumbnail" src={mision} alt="mission"/>
                   </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="fourth">
                   <div className="not-this">
+                    <h5 className="mt-5 about-tab-heads">Keys Of Success</h5>
                       <Image className="pane-image img-thumbnail" src={plan} alt="mission"/>
-                      <h5 className="mt-2">Keys Of Success</h5>
-                      <p className="now-this">The success of our company is dependent on our ability to:</p>
+                      {/* <h5 className="mt-2">Keys Of Success</h5> */}
+                      <p className=" mt-2 now-this">The success of our company is dependent on our ability to:</p>
                     <ul className="keys">
                       <li>Anticipate clients’ needs.</li>
                       <li>Adapt software solutions to these needs.</li>

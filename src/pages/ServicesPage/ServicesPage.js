@@ -36,8 +36,8 @@ export default function ServicesPage() {
             </div>
           </div>
     </section>
-    <Nav className="container-fluid service-nav-main sticky-top">
-        <Container className="services-nav sticky-top" >
+    <Nav className="container-fluid service-nav-main">
+        <Container className="services-nav" >
           <Row>
             <Col>
               <Nav.Item className="service-item">

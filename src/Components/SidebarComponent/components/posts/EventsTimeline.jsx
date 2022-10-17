@@ -8,12 +8,12 @@ function EventsTimeline() {
 
     useEffect(() => {
         async function loadEvents(){
-            axios.get("http://localhost:5000/posts")
+            axios.get("http://backend.tendaafrica.com/public/api/posts")
             .then(res => {
-                console.log("These are events from the data database", res.data)
                 const homePostsEvents = res.data
+                console.log("event posts", res.data)
                 const homePostsEventsFiltered = homePostsEvents.filter(homePostsEvent => {
-                    return homePostsEvent.category_id === 3 && homePostsEvent.pstatus === "published";
+                    return homePostsEvent.category_id === "3" && homePostsEvent.pstatus === "published";
                 })
                 setEvents(homePostsEventsFiltered)
             })
@@ -31,7 +31,7 @@ function EventsTimeline() {
                 <img className="card-img-top" src={event.image} alt=""/>
             <div className="eventBanner">
                 <h6 class="card-title text">{event.title}</h6>
-                <p class="text eventBody" dangerouslySetInnerHTML={{__html: event.body}}></p>
+                {/* <p class="text eventBody" dangerouslySetInnerHTML={{__html: event.body}}></p> */}
             </div>
         </div>
             ))}

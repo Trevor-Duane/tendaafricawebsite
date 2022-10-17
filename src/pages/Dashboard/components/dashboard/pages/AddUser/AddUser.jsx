@@ -18,11 +18,11 @@ export default function AddUser() {
   }
 
   const addUser = () => {
-    axios.post(`http://localhost:5000/register`, JSON.stringify(
+    axios.post(`http://backend.tendaafrica.com/public/api/register`, JSON.stringify(
       {
-        username,
-        email,
-        password
+        username: username,
+        email: email,
+        password: password
       }
     ),
     {
@@ -52,7 +52,7 @@ export default function AddUser() {
           <h2>Register User</h2>
         </div>
        <Form className="adduserForm" onSubmit={addUser}>
-        <div>
+          <div>
           <label htmlFor="username">Username</label>
           <input type="text" id="name" onChange={(e) => setUsername(e.target.value)} value={username} required></input>
           </div>

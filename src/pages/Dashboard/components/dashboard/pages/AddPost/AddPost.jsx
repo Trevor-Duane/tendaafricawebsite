@@ -20,6 +20,7 @@ const  modules  = {
       ["clean"],
   ],
 };
+axios.defaults.withCredentials = true; 
 
 const blogUser = JSON.parse(localStorage.getItem('blogUser'));
 
@@ -32,10 +33,18 @@ export default function AddPost() {
   const [author, setAuthor] = useState(blogUser.username);
   const [image, setImage] = useState("");
   const [pstatus, setPstatus] = useState("");
-     
+
+
     const addPost = async (e) => {
+      const token = JSON.parse(localStorage.getItem('token'));
+     
+      const headers = {
+        accept: "application/json",
+        Authorization: `Bearer +${token}`
+        
+    }
       e.preventDefault();  
-      await axios.post("http://localhost:5000/post",{
+      await axios.post("http://backend.tendaafrica.com/public/api/posts", {
         title: title,
         body: body,
         user_id: user_id,
@@ -43,7 +52,7 @@ export default function AddPost() {
         author: author,
         image: image,
         pstatus: pstatus
-      }).then(response => {
+      }, {headers: headers}).then(response => {
         console.log(response);
         /* display sweet alert and then clear all inputs */
         // setTitle("")
@@ -53,7 +62,9 @@ export default function AddPost() {
         // setAuthor("")
         // setImage("")
         // setPstatus("")
-      });
+      }).catch((error) => {
+        console.log(error)
+      })
       swal({
         title: "Success",
         text: "Post Created Successfully",
@@ -107,7 +118,7 @@ export default function AddPost() {
               <input type="text" name="img-link" placeholder="Paste image address here.." value={image} onChange={(e) => setImage(e.target.value)}/>
 
               <label>Title</label>
-              <input type="text" name="title" placeholder="Post title.." value={title} onChange={(e) => setTitle(e.target.value)}></input>
+              <input type="text" name="title" placeholder="Post title.." value={title} onChange={(e) => setTitle(e.target.value)}/>
 
               <label>Post Body</label>
               {/* <textarea type="text" id="body" name="body" value={body} onChange={(e) => setBody(e.target.value)} cols="100" rows="50"></textarea> */}

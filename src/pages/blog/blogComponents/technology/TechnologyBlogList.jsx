@@ -15,13 +15,12 @@ function TechnologyBlogList(props) {
     }, []);
 
     const getPosts = async () => {
-        const response = await axios.get('http://localhost:5000/posts');
-        console.log("technoposts ", response.data)
+        const response = await axios.get('http://backend.tendaafrica.com/public/api/posts');
+        // console.log("technoposts ", response.data)
         const allPosts = response.data
         const tPosts = allPosts.filter(allPost => {
-            return allPost.category_id === 1;
+            return allPost.category_id === "1";
         })
-        console.log(tPosts);
         setPosts(tPosts);
 
         

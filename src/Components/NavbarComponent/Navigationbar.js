@@ -7,7 +7,7 @@ import './navigation.css';
 export default function Navigationbar() {
   return (
     <div>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" classname="fixedTopNav">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className="fixedTopNav">
             <Container fluid className="myMenu">
                 <Navbar.Brand href="#home">
                     <img src={ logo } style={{ width:"120px", height:"70px"}} className="d-inline-block align-top" alt="tenda-africa logo"/>

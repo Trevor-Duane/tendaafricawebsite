@@ -5,8 +5,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './register.css';
 import { useNavigate, Link } from 'react-router-dom';
-import { MdOutlineNearMe } from 'react-icons/md';
 
+axios.defaults.withCredentials = true;
 
 function Register() {
   const navigate = useNavigate();
@@ -17,20 +17,35 @@ function Register() {
   const [password, setPassword] = useState("");
 
 
-  axios.defaults.withCredentials = true;
+  const register = async (e) => {
+    e.preventDefault();
 
-  const register = () => {
-    axios.post("http://localhost:5000/register", {
+    axios.post(`http://backend.tendaafrica.com/public/api/register`, {
       username: username,
-      email: email,
-      password: password,
+    email: email,
+     password: password
+    },
+    {
+      headers:{"Content-Type": "application/json"},
+  
     }).then((response) => {
-      console.log(response);
+      console.log(response)
+    }).catch((error) => {
+      if(error.response){
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      }else if(error.request){
+        console.log(error.request);
+      }else{
+        console.log('Error', error.message);
+      }
+      console.log(error.config);
+
     });
     swal({
       title: "Sucesss",
       text: "Registration Succesful",
-      type: "success",
       icon: "success",
       timer: 2000,
       button: false
@@ -48,13 +63,13 @@ function Register() {
           <h4>Blog Admin Login</h4>
         </div>
         <hr></hr>
-      <Form className="registerFormForm">
+      <Form className="registerFormForm" onSubmit={register}>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="name">Username</Form.Label>
           <Form.Control
                   type="text" 
                   placeholder="username" 
-                  id="name" 
+                  id="username" 
                   autoComplete="off" 
                   onChange={(e) => setUsername(e.target.value)} 
                   value={username}
@@ -89,7 +104,7 @@ function Register() {
             />
         </Form.Group>
         <div className="d-grid">
-          <Button variant="primary" type="submit" onClick={register}>
+          <Button variant="primary" type="submit">
             Submit
           </Button>
         </div>

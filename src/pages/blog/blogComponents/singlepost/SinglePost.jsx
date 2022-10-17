@@ -15,7 +15,7 @@ export default function SinglePost(props) {
 
     useEffect(() => {
         const getPosts = async () => {
-            await axios.get(`http://localhost:5000/post/${id}`).then(results => {
+            await axios.get(`http://backend.tendaafrica.com/public/api/posts/${id}`).then(results => {
                 setPost(results.data.post)
             })
 
@@ -56,13 +56,13 @@ export default function SinglePost(props) {
                         <h6 className="blogHeader">Blog Categories</h6>
                     </div>
                         <ListGroup variant="flush" >
-                        <ListGroup.Item action active={false} href="/blog#technology">Technology</ListGroup.Item>
-                        <ListGroup.Item action active={false} href="#link2">Events</ListGroup.Item>
-                        <ListGroup.Item action active={false} href="#link3">Products</ListGroup.Item>
-                        <ListGroup.Item action active={false} href="#link4">Stories</ListGroup.Item>
-                        <ListGroup.Item action active={false} href="#link5">News</ListGroup.Item>
+                        <ListGroup.Item action href="#technology">Technology</ListGroup.Item>
+                        <ListGroup.Item action href="#business">Business</ListGroup.Item>
+                        <ListGroup.Item action href="#events">Events</ListGroup.Item>
+                        <ListGroup.Item action href="#products">Products</ListGroup.Item>
+                        {/* <ListGroup.Item action active={false} href="#link5">News</ListGroup.Item>
                         <ListGroup.Item action active={false} href="#link6">Tutorials</ListGroup.Item>
-                        <ListGroup.Item action active={false} href="#link7">Business</ListGroup.Item>
+                        <ListGroup.Item action active={false} href="#link7">Business</ListGroup.Item> */}
                         </ListGroup>
                     </div>
                 </Col>

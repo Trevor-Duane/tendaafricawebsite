@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, Container, NavDropdown} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './dashNav.css';
 
 export default function DashNav() {
 
@@ -10,28 +11,28 @@ export default function DashNav() {
     <header className="dashboardHeader">
        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container fluid className="navWrapper">
-            <Navbar.Brand href="#home">Tenda Africa Dashboard</Navbar.Brand>
+            <Navbar.Brand>Tenda Africa Dashboard</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
-                <Nav className="justify-content-end" activeKey="/dashboard/userposts">
+                <Nav className="justify-content-end" activeKey="dashboard/userposts">
                   <Nav.Item>
-                    <Nav.Link href="/dashboard/userposts" eventKey="/dashboard/userposts">All Posts</Nav.Link>
+                    <Link className="nav-item dash-links" to="/userposts" eventKey="dashboard/userposts">All Posts</Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="/dashboard/addpost" eventKey="/dashboard/addpost">Posts</Nav.Link>
+                    <Link className="nav-item dash-links" to="/addpost" eventKey="dashboard/addpost">Posts</Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="/dashboard/adduser" eventKey="/dashboard/adduser">Users</Nav.Link>
+                    <Link className="nav-item dash-links" to="/adduser" eventKey="dashboard/adduser">Users</Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="/dashboard/addjob" eventKey="link-5">Jobs</Nav.Link>
+                    <Link className="nav-item dash-links" to="/addjob" eventKey="dashboard/addjob">Jobs</Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="/dashboard/jobs" eventKey="link-5">Job Ads</Nav.Link>
+                    <Link className="nav-item dash-links" to="/jobs" eventKey="dashboard/jobs">Job Ads</Link>
                   </Nav.Item>
 
                 </Nav>

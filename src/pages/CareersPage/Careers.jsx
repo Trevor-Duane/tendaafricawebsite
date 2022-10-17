@@ -164,7 +164,7 @@ export default function Contact() {
               </div>
           </Col>
 
-          <Col>
+          {/* <Col>
             <Carousel indicators={true} controls={false} className="carousel-inner core-values-carousel">
               <Carousel.Item>
                 <img className="w-100 values-img" src={ values } alt="First slide"/>
@@ -179,7 +179,7 @@ export default function Contact() {
               </Carousel.Item>
 
             </Carousel>
-          </Col>
+          </Col> */}
         </Row>
 
       </Container>

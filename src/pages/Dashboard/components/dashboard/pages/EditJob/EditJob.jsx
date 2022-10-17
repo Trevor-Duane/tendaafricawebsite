@@ -7,6 +7,9 @@ import { Container } from 'react-bootstrap';
 import DashNav from '../../components/DashNav/DashNav';
 import './editjob.css';
 
+axios.defaults.withCredentials = true;
+
+
 const  modules  = {
   toolbar: [
       [{ font: [] }],
@@ -23,7 +26,7 @@ const  modules  = {
 };
 
 const blogUser = JSON.parse(localStorage.getItem('blogUser'));
-console.log(blogUser);
+const token = JSON.parse(localStorage.getItem('token'));
 
 export default function EditJob() {
     const jobId = useParams().id;
@@ -35,12 +38,12 @@ export default function EditJob() {
 
   useEffect(() => {
     const getJobById = async () => {
-        await axios.get(`http://localhost:5000/job/${jobId}`).then(response => {
+        await axios.get(`http://backend.tendaafrica.com/public/api/jobs/${jobId}`).then(response => {
           console.log(response);
-          setTitle(response.data.job.title);
-          setBody(response.data.job.body);
-          setUser_id(response.data.job.user_id);
-          setUsername(response.data.job.username)
+          setTitle(response.data.title);
+          setBody(response.data.body);
+          setUser_id(response.data.user_id);
+          setUsername(response.data.username)
         })
     }
     getJobById();
@@ -48,12 +51,18 @@ export default function EditJob() {
 
 const updateJob = async (e) => {
   e.preventDefault();  
-  await axios.patch(`http://localhost:5000/job/${jobId}`,{
+
+  const headers = {
+    accept: "application/json",
+    Authorization: `Bearer +${token}`
+    
+}
+  await axios.put(`http://backend.tendaafrica.com/public/api/jobs/${jobId}`,{
       title: title,
       body: body,
       user_id: user_id,
       username: username,
-  });
+  }, {headers: headers});
   swal({
     title: "Success",
     text: "Post has been edited",

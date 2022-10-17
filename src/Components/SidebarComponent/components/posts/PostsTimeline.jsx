@@ -9,12 +9,19 @@ function PostsTimeline() {
 
     useEffect(() => {
         async function loadPosts(){
-            axios.get("http://localhost:5000/posts")
+            axios.get("http://backend.tendaafrica.com/public/api/posts",
+            {
+                headers:{
+                    'accept': 'application/json',
+                    'content-type': 'application/json'
+                }
+            })
             .then(res => {
-                console.log("These are posts from the database database", res.data)
                 const homePosts = res.data
+                console.log("homePosts", homePosts)
                 const homePostsFiltered = homePosts.filter(homePost => {
-                    return homePost.pstatus === "published";
+                    // return homePost.pstatus === "published";
+                    return homePost.category_id === "1" && homePost.pstatus === "published";
                 })
                 setPosts(homePostsFiltered)
             })
@@ -26,7 +33,7 @@ function PostsTimeline() {
   
   return (
     <div className="postsWrapper">
-        <h6 className="postsWrapperHead">Latest Post</h6>
+        <h6 className="postsWrapperHead">Latest Posts</h6>
         {/* <hr></hr> */}
         {posts && (
             <div className="posts">

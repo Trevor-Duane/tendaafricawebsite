@@ -12,8 +12,12 @@ function Job(){
   }, []);
 
   const getJobs = async () => {
-    await axios.get('http://localhost:5000/jobs', {
-      headers: { "Content-Type": "application/json" },
+    await axios.get('http://backend.tendaafrica.com/public/api/jobs', {
+      headers: {
+        "Content-Type": "application/json",
+        "accept": "application/json"
+
+                },
         withCredentials: false,
     }).then(response => {
       console.log(response);
@@ -23,7 +27,7 @@ function Job(){
     })
     
   }
-    if(!jobs.length){
+    if(jobs.length === 0){
       return <p>Sorry, currently no open positions</p>;
     }else{
       return (

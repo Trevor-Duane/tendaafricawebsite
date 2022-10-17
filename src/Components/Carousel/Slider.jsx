@@ -15,7 +15,7 @@ import './sliderStyles.css';
 const Slider = () => {
   return (
     <Container fluid className="carousel">
-      <AliceCarousel autoPlay autoPlayInterval="3000" infinite="true" autoPlayControls="hide" disableDotsControls="true" disableButtonsControls="true">
+      <AliceCarousel autoPlay autoPlayInterval="4000" infinite="true" autoPlayControls="hide" disableDotsControls="true" disableButtonsControls="true">
         <Container className="swiper-main">
             <Row className="calousel-wrapper p-0 m-0">
                 <Col className="calousel-left">

@@ -15,7 +15,7 @@ const JobSingle = () => {
   }, [id]);
 
   const getJobs = async () => {
-    await axios.get(`http://localhost:5000/job/${id}`, {
+    await axios.get(`http://backend.tendaafrica.com/public/api/jobs/${id}`, {
       headers: { "Content-Type": "application/json" },
         withCredentials: true,
     }).then(response => {

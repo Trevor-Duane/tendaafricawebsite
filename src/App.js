@@ -37,11 +37,11 @@ export default function App() {
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/register" element={<Register/>}></Route>
           <Route path="/dashboard" element={<Dashboard/>}></Route>
-          <Route path="/dashboard/addpost" element={<AddPost/>}></Route> 
-          <Route path="/dashboard/adduser" element={<AddUser/>}></Route>
-          <Route path="/dashboard/addjob" element={<AddJob/>}></Route>
-          <Route path="/dashboard/userposts" element={<UserPosts/>}></Route>
-          <Route path="/dashboard/jobs" element={<AllJobs/>}></Route>
+          <Route path="/addpost" element={<AddPost/>}></Route> 
+          <Route path="/adduser" element={<AddUser/>}></Route>
+          <Route path="/addjob" element={<AddJob/>}></Route>
+          <Route path="/userposts" element={<UserPosts/>}></Route>
+          <Route path="/jobs" element={<AllJobs/>}></Route>
           <Route path="/singlepost/:id" element={<SinglePost/>}></Route>
           <Route path="/detail/:id" element={<JobSingle/>}></Route>
           <Route path="/editpost/:id" element={<EditPost/>}></Route>

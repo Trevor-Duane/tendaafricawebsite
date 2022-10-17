@@ -52,6 +52,8 @@
 .service-nav-main{
     background-color: #fff;
     margin-top: 5px;
+    position: sticky;
+    top: 80px;
 }
 .services-nav{
     width: 80%;

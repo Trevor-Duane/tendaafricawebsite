@@ -7,25 +7,33 @@ import {MdDeleteOutline} from 'react-icons/md';
 import DashNav from '../../components/DashNav/DashNav';
 import './userPosts.css';
 
+axios.defaults.withCredentials = true;
+
 export default function UserPosts() {
   const [posts, setPosts] = useState([]);
+  const token = JSON.parse(localStorage.getItem('token'));
 
     useEffect(() => {
         getPosts();
     }, []);
 
     const getPosts = async () => {
-        const response = await axios.get('http://localhost:5000/posts');
-        console.log(response.data)
+        const response = await axios.get('http://backend.tendaafrica.com/public/api/posts');
+        // console.log(response.data)
         const allPosts = response.data
         const tPosts = allPosts
-        console.log(tPosts);
+        // console.log(tPosts);
         setPosts(tPosts);
 
         
     }
     const deleteProduct = async (id) => {
-      await axios.delete(`http://localhost:5000/post/${id}`);
+      const headers = {
+        accept: "application/json",
+        Authorization: `Bearer +${token}`
+        
+    }
+      await axios.delete(`http://backend.tendaafrica.com/public/api/posts/${id}`,{headers: headers});
       getPosts();
   }
 
@@ -33,7 +41,7 @@ export default function UserPosts() {
     <>
         <DashNav/>
 
-        <Container fuild className="userPostsWrapper">
+        <Container fluid className="userPostsWrapper">
           <Container className="userPostsContainer">
            {posts.map((post, index) => (
              <Row key={post.id}>
@@ -76,9 +84,7 @@ export default function UserPosts() {
                       </div>
                     </div>
                    <div className="postTextBody">
-                     <p className="bodyText">
-                       {post.body}
-                     </p>
+                     <p className="bodyText" dangerouslySetInnerHTML={{__html: post.body}}></p>
                    </div>
                  </div>
                </div>

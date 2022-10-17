@@ -1,0 +1,15 @@
+.dash-links{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 15px;
+}
+.dash-links:hover{
+    text-decoration: none;
+    color: bisque;
+    padding: 15px;
+}
+.dash-links:active{
+    text-decoration: none;
+    color: bisque;
+    padding: 15px;
+}

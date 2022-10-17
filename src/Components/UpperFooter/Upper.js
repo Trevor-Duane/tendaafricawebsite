@@ -25,15 +25,15 @@ export default function Upper() {
 
                 </Col>
 
-                <Col md={4} sm={6} xs={12} className="services footer-col text-nowrap   ">
+                <Col md={4} sm={6} xs={12} className="services footer-col text-nowrap">
                     <h2 className="head-footer">Services</h2>
                     <div className="footer-elements">
                         <Nav.Item>
-                            <Nav.Link className="nav-item footer-service-link" to="/services"><p>Web Development</p></Nav.Link>
+                            <Link className="nav-item footer-service-link" to="/services"><p>Web Development</p></Link>
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link className="nav-item footer-service-link" to="/services"><p>Software Development</p></Nav.Link>
+                            <Link className="nav-item footer-service-link" to="/services"><p>Software Development</p></Link>
                         </Nav.Item>
 
                         <Nav.Item>
